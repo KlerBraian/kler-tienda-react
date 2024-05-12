@@ -6,11 +6,11 @@ const NavBar = () => {
     <header>
         <h1>Kler Tienda</h1>
         <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Nuestras Marcas</a></li>
-                <li><a href="">Contacto</a></li>
+            <ul className='menu'>
+                <li><a className='nav-link' href="">Inicio</a></li>
+                <li><a className='nav-link' href="">Productos</a></li>
+                <li><a className='nav-link' href="">Nuestras Marcas</a></li>
+                <li><a className='nav-link' href="">Contacto</a></li>
             </ul>
         </nav>    
        <Carrito/>

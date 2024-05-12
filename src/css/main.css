@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
+h1{
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0d68d1
+;}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap : 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff
+}
+
+.productos {
+    display: grid;
+    place-items: center;
+}
