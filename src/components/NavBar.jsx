@@ -4,8 +4,7 @@ import Carrito from './Carrito'
 const NavBar = () => {
   return (
     <header>
-        <h1>Kler Cat</h1>
-        <img src="../img/michis.jpg" alt="" />
+        <h1>KlerCat</h1>
         <nav>
             <ul className='menu'>
                 <li>🐱<a className='nav-link' href="">Inicio</a></li>
