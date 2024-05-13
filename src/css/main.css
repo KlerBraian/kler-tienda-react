@@ -18,7 +18,7 @@ header {
 .menu {
     display: flex;
     list-style-type: none;
-    gap : 0.5rem;
+    gap : 0.7rem;
 }
 
 .nav-link {
@@ -29,4 +29,9 @@ header {
 .productos {
     display: grid;
     place-items: center;
+}
+
+.carrito {
+    font-size: 1.2rem;
+    color: #fff;
 }
