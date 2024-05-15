@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListCont/>
+      <ItemListCont mensaje = "Seccion de productos"/>
     </>
   )
 }
