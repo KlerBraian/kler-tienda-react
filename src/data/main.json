@@ -3,140 +3,140 @@
     "id_producto": 1,
     "nombre": "Rascador Deluxe",
     "precio": 29.99,
-    "imagen": "https://example.com/rascador_deluxe.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Rascador grande y resistente"
   },
   {
     "id_producto": 2,
     "nombre": "Cama Suave",
     "precio": 19.99,
-    "imagen": "https://example.com/cama_suave.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Cama acolchada para gatos"
   },
   {
     "id_producto": 3,
     "nombre": "Juguete Interactivo",
     "precio": 14.99,
-    "imagen": "https://example.com/juguete_interactivo.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Juguete con luces y sonido"
   },
   {
     "id_producto": 4,
     "nombre": "Arenero Cubierto",
     "precio": 39.99,
-    "imagen": "https://example.com/arenero_cubierto.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Arenero con tapa y puerta"
   },
   {
     "id_producto": 5,
     "nombre": "Comedero Automático",
     "precio": 49.99,
-    "imagen": "https://example.com/comedero_automatico.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Dispensador de comida programable"
   },
   {
     "id_producto": 6,
     "nombre": "Bebedero Fuente",
     "precio": 24.99,
-    "imagen": "https://example.com/bebedero_fuente.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Fuente de agua para gatos"
   },
   {
     "id_producto": 7,
     "nombre": "Arena Aglomerante",
     "precio": 12.99,
-    "imagen": "https://example.com/arena_aglomerante.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Arena que forma grumos"
   },
   {
     "id_producto": 8,
     "nombre": "Cepillo Deshedding",
     "precio": 15.99,
-    "imagen": "https://example.com/cepillo_deshedding.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Cepillo para eliminar pelo"
   },
   {
     "id_producto": 9,
     "nombre": "Transportadora Ventilada",
     "precio": 34.99,
-    "imagen": "https://example.com/transportadora_ventilada.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Transportadora con buena ventilación"
   },
   {
     "id_producto": 10,
     "nombre": "Rascador con Juguete",
     "precio": 22.99,
-    "imagen": "https://example.com/rascador_con_juguete.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Rascador con pelota colgante"
   },
   {
     "id_producto": 11,
     "nombre": "Collar Antipulgas",
     "precio": 9.99,
-    "imagen": "https://example.com/collar_antipulgas.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Collar para prevenir pulgas"
   },
   {
     "id_producto": 12,
     "nombre": "Cama Cueva",
     "precio": 27.99,
-    "imagen": "https://example.com/cama_cueva.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Cama tipo cueva para gatos"
   },
   {
     "id_producto": 13,
     "nombre": "Comida Seca Premium",
     "precio": 34.99,
-    "imagen": "https://example.com/comida_seca_premium.jpg",
+    "imagen":  "https://via.placeholder.com/150",
     "descripcion": "Alimento seco de alta calidad"
   },
   {
     "id_producto": 14,
     "nombre": "Comida Húmeda Gourmet",
     "precio": 21.99,
-    "imagen": "https://example.com/comida_humeda_gourmet.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Comida húmeda para gatos"
   },
   {
     "id_producto": 15,
     "nombre": "Plato Doble",
     "precio": 18.99,
-    "imagen": "https://example.com/plato_doble.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Plato doble para comida"
   },
   {
     "id_producto": 16,
     "nombre": "Correa y Arnés",
     "precio": 16.99,
-    "imagen": "https://example.com/correa_arnes.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Arnés ajustable con correa"
   },
   {
     "id_producto": 17,
     "nombre": "Juguete Láser",
     "precio": 11.99,
-    "imagen": "https://example.com/juguete_laser.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Láser interactivo para jugar"
   },
   {
     "id_producto": 18,
     "nombre": "Manta Térmica",
     "precio": 28.99,
-    "imagen": "https://example.com/manta_termica.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Manta con calefacción integrada"
   },
   {
     "id_producto": 19,
     "nombre": "Poste Rascador",
     "precio": 25.99,
-    "imagen": "https://example.com/poste_rascador.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Poste de sisal para rascar"
   },
   {
     "id_producto": 20,
     "nombre": "Bolas de Catnip",
     "precio": 8.99,
-    "imagen": "https://example.com/bolas_catnip.jpg",
+    "imagen": "https://via.placeholder.com/150",
     "descripcion": "Juguetes con hierba gatera"
   }
 ]
