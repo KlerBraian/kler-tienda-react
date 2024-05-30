@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
  
-h1{
+.logo-link{
     color: #fff;
     font-family: "Kolker Brush", cursive;
+    text-decoration: none !important
 }
 
 .productos-h1 {
@@ -34,6 +35,12 @@ header {
     color: #fff
 }
 
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 .productos {
     display: grid;
     place-items: center;
@@ -44,3 +51,65 @@ header {
     font-size: 1.2rem;
     color: #fff;
 }
+.productos-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.producto {
+    background-color: #793d0cd8;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.marcas-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.marca {
+    background-color: #793d0cd8;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+
+
+/* FORMULARIO CONTACTO
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

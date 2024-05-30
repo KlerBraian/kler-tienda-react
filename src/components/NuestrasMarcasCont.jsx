@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import data from "../data/main.json";
-import { ItemList } from './ItemList';
+import data from "../data/marcas.json";
+import { NuestrasMarcasList } from './NuestrasMarcasList';
 
-const ItemListCont = () => {
-  let [productos, setProductos] = useState([]);
+
+const NuestrasMarcasCont = () => {
+  let [marcas, setProductos] = useState([]);
   
-  const pedirProductos = () => {
+  const pedirMarcas = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(data);
@@ -15,7 +16,7 @@ const ItemListCont = () => {
 
   useEffect(() => {
     
-    pedirProductos()
+    pedirMarcas()
       .then((res) => {
         setProductos(res);
       })
@@ -23,10 +24,10 @@ const ItemListCont = () => {
   }, []);
   return (
     <div className="item-list-container">
-      <h1>Productos</h1>
-      <ItemList productos={productos} />
+      <h1>Marcas</h1>
+      <NuestrasMarcasList marcas={marcas} />
     </div>
   )
 }
 
-export default ItemListCont
+export default NuestrasMarcasCont
