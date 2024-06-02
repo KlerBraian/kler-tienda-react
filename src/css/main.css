@@ -28,7 +28,9 @@ header {
     list-style-type: none;
     gap : 0.7rem;
     font-size: 1.5rem;
+    align-items: center;
 }
+
 
 .nav-link {
     text-decoration: none;
@@ -51,10 +53,15 @@ header {
     font-size: 1.2rem;
     color: #fff;
 }
+
+.item-list-container{
+    margin: 1rem
+}
 .productos-grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
+    margin: 0.5rem
 }
 
 .producto {

@@ -4,139 +4,219 @@
     "nombre": "Rascador Deluxe",
     "precio": 29.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Rascador grande y resistente"
+    "descripcion": "Rascador grande y resistente",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 2,
     "nombre": "Cama Suave",
     "precio": 19.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Cama acolchada para gatos"
+    "descripcion": "Cama acolchada para gatos",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 3,
     "nombre": "Juguete Interactivo",
     "precio": 14.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Juguete con luces y sonido"
+    "descripcion": "Juguete con luces y sonido",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 4,
     "nombre": "Arenero Cubierto",
     "precio": 39.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Arenero con tapa y puerta"
+    "descripcion": "Arenero con tapa y puerta",
+    "categoria" : {
+      "id": "higiene",
+      "Nombre": "Higiene"
+    }
   },
   {
     "id_producto": 5,
     "nombre": "Comedero Automático",
     "precio": 49.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Dispensador de comida programable"
+    "descripcion": "Dispensador de comida programable",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 6,
     "nombre": "Bebedero Fuente",
     "precio": 24.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Fuente de agua para gatos"
+    "descripcion": "Fuente de agua para gatos",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 7,
     "nombre": "Arena Aglomerante",
     "precio": 12.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Arena que forma grumos"
+    "descripcion": "Arena que forma grumos",
+    "categoria" : {
+      "id": "higiene",
+      "Nombre": "Higiene"
+    }
   },
   {
     "id_producto": 8,
     "nombre": "Cepillo Deshedding",
     "precio": 15.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Cepillo para eliminar pelo"
+    "descripcion": "Cepillo para eliminar pelo",
+    "categoria" : {
+      "id": "higiene",
+      "Nombre": "Higiene"
+    }
   },
   {
     "id_producto": 9,
     "nombre": "Transportadora Ventilada",
     "precio": 34.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Transportadora con buena ventilación"
+    "descripcion": "Transportadora con buena ventilación",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 10,
     "nombre": "Rascador con Juguete",
     "precio": 22.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Rascador con pelota colgante"
+    "descripcion": "Rascador con pelota colgante",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 11,
     "nombre": "Collar Antipulgas",
     "precio": 9.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Collar para prevenir pulgas"
+    "descripcion": "Collar para prevenir pulgas",
+    "categoria" : {
+      "id": "higiene",
+      "Nombre": "Higiene"
+    }
   },
   {
     "id_producto": 12,
     "nombre": "Cama Cueva",
     "precio": 27.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Cama tipo cueva para gatos"
+    "descripcion": "Cama tipo cueva para gatos",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 13,
     "nombre": "Comida Seca Premium",
     "precio": 34.99,
     "imagen":  "https://via.placeholder.com/150",
-    "descripcion": "Alimento seco de alta calidad"
+    "descripcion": "Alimento seco de alta calidad",
+    "categoria": {
+      "id" : "comida",
+      "nombre": "Comida"
+    }
   },
   {
     "id_producto": 14,
     "nombre": "Comida Húmeda Gourmet",
     "precio": 21.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Comida húmeda para gatos"
+    "descripcion": "Comida húmeda para gatos",
+    "categoria": {
+      "id" : "comida",
+      "nombre": "Comida"
+    }
   },
   {
     "id_producto": 15,
     "nombre": "Plato Doble",
     "precio": 18.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Plato doble para comida"
+    "descripcion": "Plato doble para comida",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 16,
     "nombre": "Correa y Arnés",
     "precio": 16.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Arnés ajustable con correa"
+    "descripcion": "Arnés ajustable con correa",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 17,
     "nombre": "Juguete Láser",
     "precio": 11.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Láser interactivo para jugar"
+    "descripcion": "Láser interactivo para jugar",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 18,
     "nombre": "Manta Térmica",
     "precio": 28.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Manta con calefacción integrada"
+    "descripcion": "Manta con calefacción integrada",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 19,
     "nombre": "Poste Rascador",
     "precio": 25.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Poste de sisal para rascar"
+    "descripcion": "Poste de sisal para rascar",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   },
   {
     "id_producto": 20,
     "nombre": "Bolas de Catnip",
     "precio": 8.99,
     "imagen": "https://via.placeholder.com/150",
-    "descripcion": "Juguetes con hierba gatera"
+    "descripcion": "Juguetes con hierba gatera",
+    "categoria": {
+      "id" : "accesorios",
+       "nombre": "Accesorios"
+    }
   }
 ]

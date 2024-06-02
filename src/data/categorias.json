@@ -1,0 +1,17 @@
+[
+    {
+        "id" : "accesorios",
+         "nombre": "Accesorios"
+      },
+      
+      {
+        "id": "higiene",
+        "nombre": "Higiene"
+      }, 
+      
+      {
+        "id" : "comida",
+        "nombre": "Comida"
+      }
+
+]
