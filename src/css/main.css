@@ -49,6 +49,10 @@ header {
     min-height: 50vh;
 }
 
+.producto-img {
+    width: 150px;
+}
+
 .carrito {
     font-size: 1.2rem;
     color: #fff;
