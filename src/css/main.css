@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 * {
     margin: 0;
@@ -6,6 +8,19 @@
     box-sizing: border-box;
 }
  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
 .logo-link{
     color: #fff;
     font-family: "Kolker Brush", cursive;
@@ -49,8 +64,17 @@ header {
     min-height: 50vh;
 }
 
+.producto { 
+    display: flex;
+    flex-direction: column;
+    background-color: #793d0cd8;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
 .producto-img {
     width: 150px;
+   
 }
 
 .carrito {
@@ -68,37 +92,53 @@ header {
     margin: 0.5rem
 }
 
-.producto {
-    background-color: #793d0cd8;
-    border-radius: .5rem;
-    padding: 1rem;
+.producto-precio {
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+    flex: 1;
 }
 
-.marcas-grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+.boton-agregar {
+    border: 0;
+    background-color:#000;
+    padding: 0.30rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: 2px solid #ffffff;
 }
 
-.marca {
-    background-color: #793d0cd8;
-    border-radius: .5rem;
-    padding: 1rem;
+.producto-info{
+    padding: 0.30rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
 }
 
-
+.producto-descripcion {
+    margin-bottom: 1rem;
+}
 
 /* FORMULARIO CONTACTO
 */
 
+.contacto-titulo {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 form {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 150px auto;
   }
   
-  div {
+  .espacios-div {
     margin-bottom: 10px;
   }
   
@@ -124,3 +164,36 @@ form {
     background-color: #0056b3;
   }
   
+
+
+  /* FOOTER */
+
+
+  .footer {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #793d0cd8, #350b04);
+  }
+  
+  .footer-p {
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+  }
+  
+  .footer-ul {
+    display: flex;
+    list-style-type: none;
+   
+  }
+  
+  .footer-redes {
+    color: #fff;
+    margin-inline: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .footer-redes a{
+    color: #fff;
+  }
