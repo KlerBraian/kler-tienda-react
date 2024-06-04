@@ -84,13 +84,10 @@ header {
     padding: 1rem;
 }
 
-.container-img {
-  width: 100%;
-}
-
 .producto-img {
     width: 150px;
-    flex: 1;
+    height: 150px;
+    object-fit: cover;
 }
 
 .carrito {
@@ -133,6 +130,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     color: #fff;
+    margin-bottom: 0.5rem;
 }
 
 .producto-descripcion {
