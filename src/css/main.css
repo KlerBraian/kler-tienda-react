@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #eed5bd;
 }
 
 
@@ -27,9 +28,20 @@ body {
     text-decoration: none !important
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+
 .productos-h1 {
     color : #000
 }
+
+.logo {
+  width: 1.5rem
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -72,9 +84,13 @@ header {
     padding: 1rem;
 }
 
+.container-img {
+  width: 100%;
+}
+
 .producto-img {
     width: 150px;
-   
+    flex: 1;
 }
 
 .carrito {
@@ -85,11 +101,12 @@ header {
 .item-list-container{
     margin: 1rem
 }
+
 .productos-grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    margin: 0.5rem
+    margin: 1rem
 }
 
 .producto-precio {
@@ -101,7 +118,7 @@ header {
 
 .boton-agregar {
     border: 0;
-    background-color:#000;
+    background-color:#40613b;
     padding: 0.30rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -122,6 +139,36 @@ header {
     margin-bottom: 1rem;
 }
 
+
+.producto-detalles {
+  flex: 1;   
+  background-color: #eed5bd;
+  padding: 1rem;
+}
+
+.individual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50% ;
+  flex: 1;   
+  padding: 1rem;
+
+}
+
+.individual h2 {
+  margin: auto;
+}
+
+.individual img {
+  margin: auto;
+  width: 40%;
+}
+
+.individual button{
+  margin: auto;
+ width: 50%;
+}
 /* FORMULARIO CONTACTO
 */
 
@@ -161,7 +208,8 @@ form {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #000;
+    transition: background-color 0.5s;
   }
   
 
@@ -178,6 +226,8 @@ form {
   }
   
   .footer-p {
+    font-family: "Kolker Brush", cursive;
+    font-size: 2rem;
     font-weight: bold;
     text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
   }

@@ -3,7 +3,7 @@
     "id_producto": 1,
     "nombre": "Rascador Deluxe",
     "precio": 29.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/rascador.png",
     "descripcion": "Un rascador grande y resistente que proporcionará horas de entretenimiento a tu gato, ayudando a mantener sus uñas saludables.",
     "categoria": {
       "id": "accesorios",
@@ -14,7 +14,7 @@
     "id_producto": 2,
     "nombre": "Cama Suave",
     "precio": 19.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/cama-suave.png",
     "descripcion": "Una cama acolchada y cómoda para gatos, ideal para proporcionar un lugar suave y cálido para descansar.",
     "categoria": {
       "id": "accesorios",
@@ -25,7 +25,7 @@
     "id_producto": 3,
     "nombre": "Juguete Interactivo",
     "precio": 14.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/juguete-interactivo.png",
     "descripcion": "Un juguete con luces y sonido que mantendrá a tu gato entretenido y activo, estimulando sus instintos naturales de caza.",
     "categoria": {
       "id": "accesorios",
@@ -36,7 +36,7 @@
     "id_producto": 5,
     "nombre": "Comedero Automático",
     "precio": 49.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/comedero-automatico.png",
     "descripcion": "Un dispensador de comida programable que asegura que tu gato tenga comida fresca disponible incluso cuando no estás en casa.",
     "categoria": {
       "id": "accesorios",
@@ -47,7 +47,7 @@
     "id_producto": 6,
     "nombre": "Bebedero Fuente",
     "precio": 24.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/bebedero.png",
     "descripcion": "Una fuente de agua para gatos que anima a tu mascota a beber más, manteniéndola hidratada y saludable.",
     "categoria": {
       "id": "accesorios",
@@ -58,7 +58,7 @@
     "id_producto": 9,
     "nombre": "Transportadora Ventilada",
     "precio": 34.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/transportadora.png",
     "descripcion": "Una transportadora con buena ventilación que proporciona comodidad y seguridad durante los viajes.",
     "categoria": {
       "id": "accesorios",
@@ -69,7 +69,7 @@
     "id_producto": 10,
     "nombre": "Rascador con Juguete",
     "precio": 22.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/rascador-poste.png",
     "descripcion": "Un rascador con una pelota colgante que ofrece diversión y entretenimiento a tu gato mientras cuida sus uñas.",
     "categoria": {
       "id": "accesorios",
@@ -80,7 +80,7 @@
     "id_producto": 12,
     "nombre": "Cama Cueva",
     "precio": 27.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/cama-cueva.png",
     "descripcion": "Una cama tipo cueva que proporciona un refugio acogedor y seguro para que tu gato descanse y se sienta protegido.",
     "categoria": {
       "id": "accesorios",
@@ -91,7 +91,7 @@
     "id_producto": 15,
     "nombre": "Plato Doble",
     "precio": 18.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/plato-doble.png",
     "descripcion": "Un plato doble para comida y agua, diseñado para proporcionar comodidad y facilidad de uso a tu gato.",
     "categoria": {
       "id": "accesorios",
@@ -102,7 +102,7 @@
     "id_producto": 16,
     "nombre": "Correa y Arnés",
     "precio": 16.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/correa-arnes.png",
     "descripcion": "Un arnés ajustable con correa, perfecto para pasear a tu gato de manera segura y cómoda.",
     "categoria": {
       "id": "accesorios",
@@ -113,7 +113,7 @@
     "id_producto": 4,
     "nombre": "Arenero Cubierto",
     "precio": 39.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/arenero-cubierto.png",
     "descripcion": "Un arenero con tapa y puerta que ayuda a contener los olores y proporciona privacidad a tu gato.",
     "categoria": {
       "id": "higiene",
@@ -124,7 +124,7 @@
     "id_producto": 7,
     "nombre": "Arena Aglomerante",
     "precio": 12.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/arena.png",
     "descripcion": "Una arena que forma grumos, facilitando la limpieza del arenero y manteniendo el área higiénica.",
     "categoria": {
       "id": "higiene",
@@ -135,7 +135,7 @@
     "id_producto": 8,
     "nombre": "Cepillo Deshedding",
     "precio": 15.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/rascador.png",
     "descripcion": "Un cepillo diseñado para eliminar el pelo suelto y reducir la caída, manteniendo el pelaje de tu gato saludable.",
     "categoria": {
       "id": "higiene",
@@ -146,7 +146,7 @@
     "id_producto": 11,
     "nombre": "Collar Antipulgas",
     "precio": 9.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/collar-antipulgas.png",
     "descripcion": "Un collar para prevenir pulgas, manteniendo a tu gato libre de parásitos y cómodo.",
     "categoria": {
       "id": "higiene",
@@ -157,7 +157,7 @@
     "id_producto": 21,
     "nombre": "Champú para Gatos",
     "precio": 13.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/champu.png",
     "descripcion": "Un champú suave y eficaz que deja el pelaje de tu gato limpio y brillante, sin irritar su piel.",
     "categoria": {
       "id": "higiene",
@@ -168,7 +168,7 @@
     "id_producto": 22,
     "nombre": "Limpiador de Oídos",
     "precio": 7.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/limpia-oidos.png",
     "descripcion": "Una solución para limpiar y desinfectar los oídos de tu gato, previniendo infecciones y molestias.",
     "categoria": {
       "id": "higiene",
@@ -179,7 +179,7 @@
     "id_producto": 23,
     "nombre": "Pasta Dental para Gatos",
     "precio": 5.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/spray.jfif",
     "descripcion": "Una pasta dental diseñada específicamente para gatos, ayudando a mantener sus dientes limpios y sanos.",
     "categoria": {
       "id": "higiene",
@@ -190,7 +190,7 @@
     "id_producto": 24,
     "nombre": "Toallitas Húmedas",
     "precio": 8.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/toallitas.jfif",
     "descripcion": "Toallitas húmedas para la limpieza rápida de tu gato, perfectas para eliminar la suciedad y los olores.",
     "categoria": {
       "id": "higiene",
@@ -201,7 +201,7 @@
     "id_producto": 25,
     "nombre": "Spray Antiséptico",
     "precio": 12.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/spray.jfif",
     "descripcion": "Un spray antiséptico para tratar pequeñas heridas y prevenir infecciones en la piel de tu gato.",
     "categoria": {
       "id": "higiene",
@@ -212,7 +212,7 @@
     "id_producto": 26,
     "nombre": "Desodorante para Arenero",
     "precio": 9.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/spray.jfif",
     "descripcion": "Un desodorante para arenero que ayuda a controlar los olores desagradables y mantiene el área fresca.",
     "categoria": {
       "id": "higiene",
@@ -223,7 +223,7 @@
     "id_producto": 13,
     "nombre": "Comida Seca Premium",
     "precio": 34.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/comida.png",
     "descripcion": "Un alimento seco de alta calidad que proporciona los nutrientes esenciales para la salud de tu gato.",
     "categoria": {
       "id": "comida",
@@ -234,7 +234,7 @@
     "id_producto": 14,
     "nombre": "Comida Húmeda Gourmet",
     "precio": 21.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/plato-comida.jpg",
     "descripcion": "Una comida húmeda de alta calidad que proporciona una dieta balanceada y nutritiva para tu gato.",
     "categoria": {
       "id": "comida",
@@ -245,7 +245,7 @@
     "id_producto": 27,
     "nombre": "Snacks de Pollo",
     "precio": 5.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/snak.jfif",
     "descripcion": "Deliciosos snacks de pollo para gatos, perfectos como recompensa o para consentir a tu mascota.",
     "categoria": {
       "id": "comida",
@@ -256,7 +256,7 @@
     "id_producto": 28,
     "nombre": "Pasta de Malta",
     "precio": 6.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/snak.jfif",
     "descripcion": "Una pasta de malta que ayuda a prevenir y eliminar las bolas de pelo en el tracto digestivo de tu gato.",
     "categoria": {
       "id": "comida",
@@ -267,7 +267,7 @@
     "id_producto": 29,
     "nombre": "Comida Húmeda para Gatitos",
     "precio": 19.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/comida.png",
     "descripcion": "Una fórmula especial de comida húmeda para gatitos, rica en nutrientes esenciales para su crecimiento.",
     "categoria": {
       "id": "comida",
@@ -278,7 +278,7 @@
     "id_producto": 30,
     "nombre": "Comida Seca para Gatos Mayores",
     "precio": 24.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/comida.png",
     "descripcion": "Un alimento seco formulado específicamente para gatos mayores, con ingredientes que apoyan su salud y bienestar.",
     "categoria": {
       "id": "comida",
@@ -289,7 +289,7 @@
     "id_producto": 31,
     "nombre": "Comida Sin Granos",
     "precio": 32.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/comidas.png",
     "descripcion": "Una comida seca sin granos para gatos, ideal para aquellos con sensibilidades alimentarias.",
     "categoria": {
       "id": "comida",
@@ -300,7 +300,7 @@
     "id_producto": 32,
     "nombre": "Trozos de Atún",
     "precio": 18.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/snak.jfif",
     "descripcion": "Trozos de atún enlatados para gatos, una deliciosa y saludable opción de comida húmeda.",
     "categoria": {
       "id": "comida",
@@ -311,7 +311,7 @@
     "id_producto": 33,
     "nombre": "Sopa para Gatos",
     "precio": 14.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/snak.jfif",
     "descripcion": "Una sopa nutritiva para gatos, perfecta como complemento a su dieta diaria.",
     "categoria": {
       "id": "comida",
@@ -322,7 +322,7 @@
     "id_producto": 34,
     "nombre": "Leche Especial para Gatos",
     "precio": 8.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/leche.jfif",
     "descripcion": "Leche formulada específicamente para gatos, rica en nutrientes y fácil de digerir.",
     "categoria": {
       "id": "comida",
@@ -333,7 +333,7 @@
     "id_producto": 35,
     "nombre": "Comida Orgánica",
     "precio": 27.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/snak.jfif",
     "descripcion": "Comida orgánica para gatos, elaborada con ingredientes naturales y sin aditivos artificiales.",
     "categoria": {
       "id": "comida",
@@ -344,7 +344,7 @@
     "id_producto": 36,
     "nombre": "Golosinas de Pescado",
     "precio": 9.99,
-    "imagen": "https://via.placeholder.com/150",
+    "imagen": "/src/img/golosina.jfif",
     "descripcion": "Golosinas hechas de pescado fresco, una opción saludable y deliciosa para consentir a tu gato.",
     "categoria": {
       "id": "comida",

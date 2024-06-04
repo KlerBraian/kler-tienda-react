@@ -15,7 +15,7 @@ const ItemDetailCont = () => {
    
 
   return (
-    <div>{producto ? <ItemDetail key={producto.id_} producto={producto}/> : "Cargando..."}</div>
+    <div className='producto-detalles'>{producto ? <ItemDetail key={producto.id_} producto={producto}/> : "Cargando..."}</div>
   )
 }
 

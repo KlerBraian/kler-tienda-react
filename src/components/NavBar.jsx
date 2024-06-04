@@ -6,7 +6,11 @@ import categories from '../data/categorias.json';
 const NavBar = () => {
   return (
     <header>
+        <div className='logo-container'>
         <h1><NavLink to="/" className="logo-link">KlerCat</NavLink></h1>
+        <img className="logo" src="/src/img/huella.png" alt="" />
+        </div>
+        
         <nav>
             <ul className='menu'>
                 <li className='nav-item'>
