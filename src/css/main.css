@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
 @import 'bootstrap-icons/font/bootstrap-icons.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -42,18 +43,25 @@ body {
   width: 1.5rem
 }
 
-header {
+.header {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background: linear-gradient(to right, #793d0cd8, #350b04);
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2rem
 ;}
 
+
+
 .menu {
+   font-family: sans-serif;
     display: flex;
     list-style-type: none;
-    gap : 0.7rem;
+    gap : 1rem;
     font-size: 1.5rem;
     align-items: center;
 }
@@ -67,8 +75,16 @@ header {
 .active {
     font-weight: bold;
     text-decoration: underline;
+    color: #f5b048;
 }
 
+.titulo-categoria {
+  font-family: "Quattrocento Sans", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #271903;
+}
 
 .productos {
     display: grid;
@@ -77,43 +93,105 @@ header {
 }
 
 .producto { 
-    display: flex;
-    flex-direction: column;
-    background-color: #793d0cd8;
-    border-radius: .5rem;
-    padding: 1rem;
+  height: 430px;
+  width: 305px;
+  border-radius: 10%;
+  box-shadow: 6px 6px 20px #0000008c;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #350b04;
+  padding: 1rem;
+}
+
+.producto::before{
+  content: "";
+  position: absolute;
+  height: 490px;
+  width: 360px;
+  background-image: conic-gradient(#050504 1deg, transparent 60deg);
+  transition: none; 
+}
+
+@keyframes rotar{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(-360deg);
+  }
+}
+
+.producto:hover::before {
+  animation: rotar 2s linear infinite;
+}
+
+
+.producto::after{
+  content: "";
+  position: absolute;
+  height: 420px;
+  width: 295px;
+  background-color: #ee9146;
+  border-radius: 10%;
+  box-shadow: inset 6px 6px 20px #0000008c;;
+
+}
+
+
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 1rem;
+  z-index: 2;
 }
 
 .producto-img {
-    width: 150px;
+    width: 200px;
     height: 150px;
-    object-fit: cover;
+    object-fit: contain;
+    margin: auto;
+    z-index: 2;
 }
 
 .carrito {
+    text-decoration: none;
     font-size: 1.2rem;
     color: #fff;
 }
 
 .item-list-container{
-    margin: 1rem
+  margin-inline: 20%;
+  margin-top: 2.5rem;
 }
 
 .productos-grilla {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
     margin: 1rem
 }
 
 .producto-precio {
+  font-family: "Quattrocento Sans", sans-serif;
     text-align: end;
     font-weight: bold;
     font-size: 20px;
     flex: 1;
+    margin-bottom: 1rem;
+    z-index: 2;
 }
 
 .boton-agregar {
+  font-family: "Quattrocento Sans", sans-serif;
     border: 0;
     background-color:#40613b;
     padding: 0.30rem;
@@ -122,19 +200,32 @@ header {
     border-radius: 0.3rem;
     cursor: pointer;
     border: 2px solid #ffffff;
+    z-index: 2;
 }
 
 .producto-info{
+    font-family: "Quattrocento Sans", sans-serif;
     padding: 0.30rem;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
     margin-bottom: 0.5rem;
+    z-index: 2;
+}
+
+.producto-titulo {
+  font-family: "Quattrocento Sans", sans-serif;
+  text-align: center;
+  z-index: 2;
 }
 
 .producto-descripcion {
-    margin-bottom: 1rem;
+ font-size: 0.85rem;
+  font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    z-index: 2;
 }
 
 

@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../context/CartContext';
 
-export const ItemDetail = ({producto}) => {
+export const ItemDetail = ( { producto } ) => {
+
+    const { agregarAlCarrito } = useContext(CartContext);
+
   return (
-    <div  className="producto-detalle individual">
-        <h2 className='producto-titulo'>{producto.nombre}</h2>
-        <img className='producto-img' src={producto.imagen}/>
-        <p className='producto-precio'>${producto.precio}</p>
+    <div className="producto-detalle individual">
+        <img className='producto-img' src={producto.imagen} />
+        <h1 className='producto-titulo'>{producto.nombre}</h1>
         <p className='producto-descripcion'>{producto.descripcion}</p>
-        <button className='boton-agregar'>Comprar</button>
+        <p className='producto-precio'>${producto.precio}</p>
+        <button onClick={() => agregarAlCarrito(producto)} className='boton-agregar'>Agregar al carrito</button>
     </div>
   )
 }

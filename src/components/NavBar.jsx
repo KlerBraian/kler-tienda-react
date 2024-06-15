@@ -1,11 +1,25 @@
-import React from 'react';
-import Carrito from './Carrito';
-import { NavLink } from 'react-router-dom';
-import categories from '../data/categorias.json';
 
+import { CartWidget } from './CartWidget';
+import React, { useEffect, useState } from 'react';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase/config";
+import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
+
+      let [categories, setCategories] = useState([]);
+    
+      useEffect(() => {
+        const categoriasRef = collection(db, "categorias");
+        getDocs(categoriasRef)
+          .then((res) => {
+            setCategories(res.docs.map((doc) => {
+              return { ...doc.data() }
+            }));
+          })
+      }, [])
+
   return (
-    <header>
+    <header className='header'>
         <div className='logo-container'>
         <h1><NavLink to="/" className="logo-link">KlerCat</NavLink></h1>
         <img className="logo" src="/src/img/huella.png" alt="" />
@@ -30,7 +44,7 @@ const NavBar = () => {
                 <li>🐱<NavLink to = "/contacto" activeclassname ="active" className="nav-link">Contacto</NavLink></li>
             </ul>
         </nav>    
-       <Carrito/>
+  <CartWidget/>
     </header>
     )
 }
