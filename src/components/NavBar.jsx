@@ -38,9 +38,11 @@ const NavBar = () => {
                              </NavLink>
                         </li>
                         )
-                    }) 
+                        
+                    })
+                   
                 }
-
+                  <li>🐱<NavLink to = "/buscar-pedido"  activeclassname ="active" className="nav-link">Segui tu pedido</NavLink></li>
                 <li>🐱<NavLink to = "/contacto" activeclassname ="active" className="nav-link">Contacto</NavLink></li>
             </ul>
         </nav>    

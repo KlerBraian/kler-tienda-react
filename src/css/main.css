@@ -112,7 +112,7 @@ body {
   position: absolute;
   height: 490px;
   width: 360px;
-  background-image: conic-gradient(#050504 1deg, transparent 60deg);
+  background-image: conic-gradient(#f8f8f0 1deg, transparent 60deg);
   transition: none; 
 }
 
@@ -185,7 +185,6 @@ body {
     text-align: end;
     font-weight: bold;
     font-size: 20px;
-    flex: 1;
     margin-bottom: 1rem;
     z-index: 2;
 }
@@ -223,7 +222,7 @@ body {
 .producto-descripcion {
  font-size: 0.85rem;
   font-family: "Open Sans", sans-serif;
-    margin-bottom: 0.5rem;
+    flex: 1;
     text-align: center;
     z-index: 2;
 }

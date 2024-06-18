@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CartCheck } from 'react-bootstrap-icons'
+import { FaCat } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 
@@ -9,7 +9,7 @@ export const CartWidget = () => {
 
   return (
     <Link className="carrito" to="/carrito">
-      <CartCheck color="white" /> {calcularCantidad()}
+     <FaCat className = "carrito"/> {calcularCantidad()}
     </Link>
   )
 }

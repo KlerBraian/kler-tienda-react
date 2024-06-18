@@ -1,10 +1,15 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import { FaColonSign } from "react-icons/fa6";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([]);
+
+    useEffect (() => {
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+    }, [carrito])
   
     const agregarAlCarrito = (producto) => { 
         setCarrito(prevCarrito => {
@@ -33,8 +38,36 @@ export const CartProvider = ({children}) => {
       setCarrito([]);
     }
 
+    const eliminarProducto = (producto) => {
+        const productoEncontrado = carrito.find(prod => prod.id === producto.id);
+        setCarrito(carrito.filter(prod => prod.id !== producto.id));
+      }
+
+    
+    function sumarCantidad (producto) {
+        console.log(producto)
+            setCarrito(prevCarrito =>
+                prevCarrito.map(item =>
+                    item.id === producto.id
+                        ? { ...item, cantidad: item.cantidad + 1 }
+                        : item
+                )
+            );
+        };
+    
+        function restarCantidad(producto){
+            setCarrito(prevCarrito =>
+                prevCarrito.map(item =>
+                    item.id === producto.id
+                        ? { ...item, cantidad: Math.max(item.cantidad - 1, 0) }
+                        : item
+                )
+            );
+        };
+         
+    
     return (
-        <CartContext.Provider value={ { carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito } }>
+        <CartContext.Provider value={ { carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto, sumarCantidad, restarCantidad } }>
             {children}
         </CartContext.Provider>
     )
