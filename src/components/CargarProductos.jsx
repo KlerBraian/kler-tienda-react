@@ -1,9 +1,9 @@
-// import React, { useEffect, useState } from 'react';
-// import data from "../data/main.json";
-// import { collection, addDoc, getDocs } from "firebase/firestore";
-// import { db } from "../firebase/config";
+import React, { useEffect, useState } from 'react';
+import data from "../data/main.json";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../firebase/config";
 
-// export const CargarProductos = () => {
+export const CargarProductos = () => {
 //     const [isLoaded, setIsLoaded] = useState(false);
 
 //     useEffect(() => {
@@ -27,7 +27,7 @@
 //         cargarProductos();
 //     }, [isLoaded]); // Dependencia en isLoaded
 
-//     return (
-//         <div>CargarProductos</div>
-//     );
-// }
+    return (
+        <div>CargarProductos</div>
+    );
+}
