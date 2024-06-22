@@ -456,6 +456,38 @@ form {
   font-weight: bold;
   text-shadow: 0 0 5px #02a8f5, 0 0 5px #02a8f5, 0 0 5px #02a8f5;
 }
+
+.compra-sin-productos{
+  margin: auto;
+}
+
+.volver {
+  width: 100%;;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+
+/* SEGUIMIENTO*/
+.container-seguimiento{
+  margin: auto;
+
+}
+
+.input-estado {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.boton-verificar{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.estado {
+  font-weight: bold;
+}
+
   /* FOOTER */
 
 

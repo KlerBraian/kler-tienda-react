@@ -3,6 +3,7 @@ import { CartContext } from "../context/CartContext";
 import { useForm } from "react-hook-form";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../firebase/config";
+import { Link } from "react-router-dom";
 
 
 export const Checkout = () => {
@@ -41,7 +42,7 @@ export const Checkout = () => {
             </>
         )
     }
-
+else if (carrito.length> 0) {
   return (
     <div>
         <form className="form-checkout" onSubmit={handleSubmit(comprar)}>
@@ -51,4 +52,13 @@ export const Checkout = () => {
         </form>
     </div>
   )
+}
+
+return (
+    <div className="compra-sin-productos">
+    <p className="checkout-id">No posee productos en su carrito</p>
+    <button className='confirmar-comre volver'><Link to="/" className='confirmar-compra'> Volver a la tienda</Link></button>
+    </div>
+   
+)
 }

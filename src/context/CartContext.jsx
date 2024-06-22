@@ -8,8 +8,13 @@ export const CartContext = createContext();
 
 export const CartProvider = ({children}) => {
 
-    const [carrito, setCarrito] = useState([]);
+    const [carrito, setCarrito] = useState(()=> {
+        // Inicializa el estado con los datos del localStorage, si existen
+        const carritoGuardado = localStorage.getItem("carrito");
+        return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+    });
 
+    
     useEffect (() => {
         localStorage.setItem("carrito", JSON.stringify(carrito))
     }, [carrito])
