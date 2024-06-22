@@ -45,17 +45,6 @@
     }
   },
   {
-    "id": 6,
-    "nombre": "Bebedero Fuente",
-    "precio": 24.99,
-    "imagen": "/src/img/bebedero.png",
-    "descripcion": "Una fuente de agua para gatos que anima a tu mascota a beber más, manteniéndola hidratada y saludable.",
-    "categoria": {
-      "id": "accesorios",
-      "nombre": "Accesorios"
-    }
-  },
-  {
     "id": 9,
     "nombre": "Transportadora Ventilada",
     "precio": 34.99,
@@ -66,17 +55,7 @@
       "nombre": "Accesorios"
     }
   },
-  {
-    "id": 4,
-    "nombre": "Arenero Cubierto",
-    "precio": 39.99,
-    "imagen": "/src/img/arenero-cubierto.png",
-    "descripcion": "Un arenero con tapa y puerta que ayuda a contener los olores y proporciona privacidad a tu gato.",
-    "categoria": {
-      "id": "higiene",
-      "nombre": "Higiene"
-    }
-  },
+
   {
     "id": 7,
     "nombre": "Arena Aglomerante",
@@ -182,17 +161,6 @@
     "precio": 19.99,
     "imagen": "/src/img/comida.png",
     "descripcion": "Una fórmula especial de comida húmeda para gatitos, rica en nutrientes esenciales para su crecimiento.",
-    "categoria": {
-      "id": "comida",
-      "nombre": "Comida"
-    }
-  },
-  {
-    "id": 30,
-    "nombre": "Comida Seca para Gatos Mayores",
-    "precio": 24.99,
-    "imagen": "/src/img/comida.png",
-    "descripcion": "Un alimento seco formulado específicamente para gatos mayores, con ingredientes que apoyan su salud y bienestar.",
     "categoria": {
       "id": "comida",
       "nombre": "Comida"

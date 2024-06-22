@@ -1,23 +1,33 @@
-import React, { useEffect } from 'react'
-import data from "../data/main.json"
-import { collection, addDoc } from "firebase/firestore";
+import React, { useEffect, useState } from 'react';
+import data from "../data/main.json";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
 
 export const CargarProductos = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
 
-        useEffect(() => {
-            const cargarProductos = async () => {
+    useEffect(() => {
+        const cargarProductos = async () => {
+            if (!isLoaded) {
                 const productosRef = collection(db, "productos");
-                for (const prod of data) {
-                    await addDoc(productosRef, prod);
-                }
-            };
-    
-            cargarProductos();
-        }, []); // Asegúrate de que el segundo argumento de useEffect sea un array vacío
-    
-        return (
-            <div>CargarProductos</div>
-        );
+                const querySnapshot = await getDocs(productosRef);
 
+                if (querySnapshot.empty) {
+                    for (const prod of data) {
+                        await addDoc(productosRef, prod);
+                    }
+                    setIsLoaded(true); // Marcar como cargado
+                } else {
+                    console.log("Los productos ya están cargados en la base de datos.");
+                    setIsLoaded(true); // Marcar como cargado incluso si ya existen
+                }
+            }
+        };
+    
+        cargarProductos();
+    }, [isLoaded]); // Dependencia en isLoaded
+
+    return (
+        <div>CargarProductos</div>
+    );
 }

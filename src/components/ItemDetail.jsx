@@ -8,16 +8,13 @@ export const ItemDetail = ( { producto } ) => {
 
   return (
     <div className='contenedor-individual'>
-    <div className="producto-detalle individual">
-        <img className='producto-img' src={producto.imagen} />
-        <h1 className='producto-titulo'>{producto.nombre}</h1>
-        <p className='producto-descripcion'>{producto.descripcion}</p>
-        <p className='producto-precio'>${producto.precio}</p>
+    <div className="producto-detalle-individual">
+        <h1 className='producto-titulo-individual'>{producto.nombre}</h1>
+        <img className='producto-img-individual' src={producto.imagen} />
+        <p className='producto-descripcion-individual'>{producto.descripcion}</p>
+        <p className='producto-precio-individual'>${producto.precio}</p>
+        <button onClick={() => agregarAlCarrito(producto)} className='boton-agregar-individual'>Agregar al carrito</button>
     </div>
-    <div className='producto-opciones'>
-              <FaCat className = "carrito"/>
-              <button onClick={() => agregarAlCarrito(producto)} className='boton-agregar'>Agregar al carrito</button>
-    </div>
-    </div>
+</div>
   )
 }

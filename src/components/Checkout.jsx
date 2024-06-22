@@ -32,15 +32,19 @@ export const Checkout = () => {
     if (docId) {
         return (
             <>
-                <h1>Muchas gracias por tu compra</h1>
-                <p>Para hacer el seguimiento de tu pedido, el identificador es: {docId}</p>
+            <div className="checkout-container">
+                <h1 className="checkout-titulo">Muchas gracias por tu compra</h1>
+                <img className="img-checkout" src="./src/img/michis.jpg" alt="" />
+                <p className="checkout-id">Para hacer el seguimiento de tu pedido, el identificador es:  <span className="id">{docId}</span></p>
+            </div>
+           
             </>
         )
     }
 
   return (
     <div>
-        <form onSubmit={handleSubmit(comprar)}>
+        <form className="form-checkout" onSubmit={handleSubmit(comprar)}>
             <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
             <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />
             <button type="submit">Comprar</button>
