@@ -37,7 +37,7 @@ export const SeguimientoPedido = () => {
       />
       <button className='boton-verificar' onClick={verificarDocumento}>Verifique estado de su compra</button>
 
-      {documentoEncontrado && (
+      {documentoEncontrado ? (
         <>
           <p>Su pedido {inputValue} está: <span className='estado'>{documentoEncontrado.estado}</span>🐱.</p>
           {documentoEncontrado.productos.map(producto => (
@@ -52,7 +52,7 @@ export const SeguimientoPedido = () => {
           ))}
           <h3 className='carrito-total'>Total: ${calcularTotal()}</h3>
         </>
-      )  
+      )  : <p>Identificador invalido</p>
      }
     </div>
   );
