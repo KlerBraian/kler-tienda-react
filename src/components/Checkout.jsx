@@ -35,7 +35,7 @@ export const Checkout = () => {
             <>
             <div className="checkout-container">
                 <h1 className="checkout-titulo">Muchas gracias por tu compra</h1>
-                <img className="img-checkout" src="./src/image/michis.jpg" alt="" />
+                <img className="img-checkout" src="/image/michis.jpg" alt="" />
                 <p className="checkout-id">Para hacer el seguimiento de tu pedido, el identificador es:  <span className="id">{docId}</span></p>
             </div>
            

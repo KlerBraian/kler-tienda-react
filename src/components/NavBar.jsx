@@ -22,7 +22,7 @@ const NavBar = () => {
     <header className='header'>
         <div className='logo-container'>
         <h1><NavLink to="/" className="logo-link">KlerCat</NavLink></h1>
-        <img className="logo" src="./src/image/huella.png" alt="" />
+        <img className="logo" src="/image/huella.png" alt="" />
         </div>
         
         <nav>
