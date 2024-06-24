@@ -10,8 +10,8 @@ import { CartProvider } from "./context/CartContext"
 import Carrito from "./components/Carrito"
 import { CargarProductos } from "./components/CargarProductos";
 import { Checkout } from "./components/Checkout";
-import { SeguimientoPedido } from "./components/SeguimientoPedido"
-
+import { SeguimientoPedido } from "./components/SeguimientoPedido";
+import Wishlist from "./components/Wishlist"
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
       <Route path="/buscar-pedido" element={<SeguimientoPedido/>}/>
       <Route path="/finalizar-compra" element={<Checkout/>}/>
       <Route path="/contacto" element ={<ContactForm/>}></Route>
+      <Route path="/wishlist" element={<Wishlist/>}></Route>
       <Route path="/*" element ={<NotFound/>}></Route>
     </Routes>
     <Footer/>

@@ -4,7 +4,7 @@ import { FaCat } from "react-icons/fa";
 
 export const ItemDetail = ( { producto } ) => {
 
-    const { agregarAlCarrito } = useContext(CartContext);
+    const { agregarAlCarrito, agregarAWishlist } = useContext(CartContext);
 
   return (
     <div className='contenedor-individual'>
@@ -14,6 +14,7 @@ export const ItemDetail = ( { producto } ) => {
         <p className='producto-descripcion-individual'>{producto.descripcion}</p>
         <p className='producto-precio-individual'>${producto.precio}</p>
         <button onClick={() => agregarAlCarrito(producto)} className='boton-agregar-individual'>Agregar al carrito</button>
+        <button onClick={() => agregarAWishlist(producto)} className='boton-agregar-wish'>Agregar a Deseos</button>
     </div>
 </div>
   )

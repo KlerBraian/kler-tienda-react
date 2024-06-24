@@ -9,7 +9,6 @@ export const CartContext = createContext();
 export const CartProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState(()=> {
-        // Inicializa el estado con los datos del localStorage, si existen
         const carritoGuardado = localStorage.getItem("carrito");
         return carritoGuardado ? JSON.parse(carritoGuardado) : [];
     });
@@ -19,6 +18,19 @@ export const CartProvider = ({children}) => {
         localStorage.setItem("carrito", JSON.stringify(carrito))
     }, [carrito])
   
+
+    
+    const [wish, setWishlist] = useState(()=> {
+        const wishGuardado = localStorage.getItem("wishlist");
+        return wishGuardado ? JSON.parse(wishGuardado) : [];
+    });
+
+    
+    useEffect (() => {
+        localStorage.setItem("wishlist", JSON.stringify(wish))
+    }, [wish])
+
+
     const agregarAlCarrito = (producto) => { 
             const productoExistente = carrito.find(item => item.id === producto.id);
             if (productoExistente) {
@@ -42,14 +54,76 @@ export const CartProvider = ({children}) => {
               }).showToast();
         }
         
+        const agregarAWishlist = (producto) => { 
+            const productoExistente = wish.find(item => item.id === producto.id);
+            if (productoExistente) {
+                setWishlist(prevWish =>
+                    prevWish.map(item =>
+                        item.id === producto.id
+                            ? { ...item, cantidad: item.cantidad + 1 }
+                            : item
+                    )
+                );
+            } else {
+                setWishlist(prevWish => [...prevWish, { ...producto, cantidad: 1 }]);
+            }
+            Toastify({
+                text: "Producto agregado a tu lista de deseos",
+                className: "info",
+                style: {
+                  background: "#432163",
+                  borderRadius: "0.5rem",
+                }
+              }).showToast();
+        }
+
+
+        const wishlistAddCarrito = (productos) => {
+            let carritoActualizado = [...carrito];
+            productos.forEach(producto => {
+                const productoExistente = carritoActualizado.find(item => item.id === producto.id);
+                if (productoExistente) {
+                    carritoActualizado = carritoActualizado.map(item =>
+                        item.id === producto.id
+                            ? { ...item, cantidad: item.cantidad + producto.cantidad }
+                            : item
+                    );
+                } else {
+                    carritoActualizado.push({ ...producto });
+                }
+            });
+    
+            setCarrito(carritoActualizado);
+            vaciarWishlist();
+    
+            Toastify({
+                text: "Productos agregados al carrito",
+                className: "info",
+                style: {
+                    background: "#432163",
+                    borderRadius: "0.5rem",
+                }
+            }).showToast();
+        };
+       
+        
+
+
     const calcularCantidad = () => {
         return carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     }
-
+    const calcularCantidadWish = () => {
+        return wish.reduce((acc, producto) => acc + producto.cantidad, 0);
+    }
   
     const calcularTotal = () => {
         return Math.round(carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0)).toFixed(2);
     }
+
+    const calcularTotalWish = () => {
+        return Math.round(wish.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0)).toFixed(2);
+    }
+
     const vaciarCarrito = () => {
       setCarrito([]);
       Toastify({
@@ -61,6 +135,20 @@ export const CartProvider = ({children}) => {
         }
       }).showToast();
     }
+
+    const vaciarWishlist = () => {
+        setWishlist([]);
+        Toastify({
+          text: "Has cumplido tus deseos",
+          className: "info",
+          style: {
+            background: "#432163",
+            borderRadius: "0.5rem",
+          }
+        }).showToast();
+      }
+
+
 
     const eliminarProducto = (producto) => {
         const productoEncontrado = carrito.find(prod => prod.id === producto.id);
@@ -74,6 +162,20 @@ export const CartProvider = ({children}) => {
             }
           }).showToast();
       }
+
+    const eliminarWish = (producto) => {
+    const productoEncontrado = wish.find(prod => prod.id === producto.id);
+    setWishlist(wish.filter(prod => prod.id !== producto.id));
+    Toastify({
+        text: "Has eliminado un deseo",
+        className: "info",
+        style: {
+          background: "#432163",
+          borderRadius: "0.5rem",
+        }
+      }).showToast();
+  }
+
 
     
     function sumarCantidad (producto) {
@@ -96,10 +198,32 @@ export const CartProvider = ({children}) => {
                 )
             );
         };
+
+
+        function sumarWish (producto) {
+            console.log(producto)
+                setWishlist(prevWish =>
+                    prevWish.map(item =>
+                        item.id === producto.id
+                            ? { ...item, cantidad: item.cantidad + 1 }
+                            : item
+                    )
+                );
+            };
+        
+            function restarWish(producto){
+                setWishlist(prevWish =>
+                    prevWish.map(item =>
+                        item.id === producto.id
+                            ? { ...item, cantidad: Math.max(item.cantidad - 1, 0) }
+                            : item
+                    )
+                );
+            };
          
     
     return (
-        <CartContext.Provider value={ { carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto, sumarCantidad, restarCantidad } }>
+        <CartContext.Provider value={ { carrito, wish, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto, sumarCantidad, restarCantidad, agregarAWishlist,calcularCantidadWish, calcularTotalWish , sumarWish, restarWish, eliminarWish, vaciarWishlist, wishlistAddCarrito} }>
             {children}
         </CartContext.Provider>
     )

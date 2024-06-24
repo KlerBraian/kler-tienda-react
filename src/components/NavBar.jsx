@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { Link, NavLink } from 'react-router-dom';
+import WishlistWidget from "./WishlistWidget"
+
 const NavBar = () => {
 
       let [categories, setCategories] = useState([]);
@@ -47,6 +49,7 @@ const NavBar = () => {
             </ul>
         </nav>    
   <CartWidget/>
+  <WishlistWidget/>
     </header>
     )
 }

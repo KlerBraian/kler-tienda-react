@@ -4,7 +4,7 @@ import { CartContext } from '../context/CartContext'
 
 export const Item = ( {producto} ) => {
 
-  const {agregarAlCarrito} = useContext(CartContext);
+  const {agregarAlCarrito, agregarAWishlist} = useContext(CartContext);
 
   return (
     <div className="producto">
@@ -17,6 +17,7 @@ export const Item = ( {producto} ) => {
       <p className='producto-descripcion'>{producto.descripcion}</p>
       <Link to={`/item/${producto.id}`} className='producto-info'>Ver más detalles</Link>
       <button onClick={() => agregarAlCarrito(producto)} className='boton-agregar'>Agregar al carrito</button>
+      <button onClick={() => agregarAWishlist(producto)} className='boton-agregar wish'>Agregar a Deseos</button>
     </div>
   )
 }
