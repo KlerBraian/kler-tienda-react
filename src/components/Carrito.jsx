@@ -31,7 +31,7 @@ const Carrito = () => {
                 </button>
                 </div>
                 <div>
-                <img className='carrito-impresora' src="../img/impresora.jfif" alt="" />
+                <img className='carrito-impresora' src="./src/image/impresora.jfif" alt="" />
             </div> 
             </div>
            
