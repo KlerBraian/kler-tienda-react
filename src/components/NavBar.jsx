@@ -9,6 +9,7 @@ import WishlistWidget from "./WishlistWidget"
 const NavBar = () => {
 
   let [categories, setCategories] = useState([]);
+  let [visibleNav, setVisibleNav] = useState("");
 
   useEffect(() => {
     const categoriasRef = collection(db, "categorias");
@@ -21,13 +22,14 @@ const NavBar = () => {
   }, [])
 
   return (
-    <header className='header'>
+    <header className={`header ${visibleNav}`}>
       <div className='logo-container'>
         <h1><NavLink to="/" className="logo-link">KlerCat</NavLink></h1>
         <img className="logo" src="/image/huella.png" alt="" />
       </div>
-
-      <nav>
+      <button className={`abrir-menu${visibleNav}`} onClick={()=> setVisibleNav("Visible")}><i class="bi bi-list"></i></button>
+      <nav className={`nav${visibleNav} `}>
+        <button className='cerrar-menu'onClick={()=> setVisibleNav("")}><i class="bi bi-x-circle"></i></button>
         <ul className='menu'>
           <li className='nav-item'>
             🐱<NavLink to="/" activeclassname="active" className="nav-link">Inicio</NavLink>
@@ -46,7 +48,7 @@ const NavBar = () => {
           }
           <li className='nav-item'>🐱<NavLink to="/buscar-pedido" activeclassname="active" className="nav-link">Segui tu pedido</NavLink></li>
           <li className='nav-item'>🐱<NavLink to="/contacto" activeclassname="active" className="nav-link">Contacto</NavLink></li>
-          <CartWidget />
+          <CartWidget/>
           <WishlistWidget />
         </ul>
       </nav>
