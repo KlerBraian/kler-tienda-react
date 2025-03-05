@@ -5,13 +5,14 @@ const Wishlist = () => {
     const { wish, calcularTotalWish, vaciarWishlist, eliminarWish, sumarWish, restarWish, wishlistAddCarrito} = useContext(CartContext);
 
     return (
-        <div>
+        <div className='content-wishlist-cart'>
             <div className='carrito-container'>
                 <h2>Lista de deseos</h2>
                 {wish.map(producto => (
                     <div key={producto.id} className="producto-carrito">
                         <div className='carrito-izquierda'>
                             <h3 className='producto-carrito-nombre'>{producto.nombre}</h3>
+                            <img className='img-wishlist' src={producto.imagen} />
                         <p className='producto-carrito-cantidad'>Cantidad: <button onClick={() => restarWish(producto)} className="cantidad-resta wish">- </button> {producto.cantidad} <button onClick={() => sumarWish(producto)}  className="cantidad-suma wish"> +</button></p>
                         <button className='producto-carrito-eliminar wish' onClick={() => { eliminarWish(producto) }}>Eliminar 🗑</button>
                         </div>

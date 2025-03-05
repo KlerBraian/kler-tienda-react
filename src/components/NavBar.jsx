@@ -31,14 +31,14 @@ const NavBar = () => {
       <nav className={`nav${visibleNav} `}>
         <button className='cerrar-menu'onClick={()=> setVisibleNav("")}><i class="bi bi-x-circle"></i></button>
         <ul className='menu'>
-          <li className='nav-item'>
-            🐱<NavLink to="/" activeclassname="active" className="nav-link">Inicio</NavLink>
+          <li className='nav-item' >
+            🐱<NavLink to="/" activeclassname="active" className="nav-link" onClick={()=> setVisibleNav("")}>Inicio</NavLink>
           </li>
           {
             categories.map((category) => {
               return (
                 <li className="nav-item" key={category.id}>
-                  🐱<NavLink to={`/category/${category.id}`} activeclassname="active" className="nav-link">{category.nombre}
+                  🐱<NavLink to={`/category/${category.id}`} onClick={()=> setVisibleNav("")} activeclassname="active" className="nav-link">{category.nombre} 
                   </NavLink>
                 </li>
               )
@@ -46,8 +46,8 @@ const NavBar = () => {
             })
 
           }
-          <li className='nav-item'>🐱<NavLink to="/buscar-pedido" activeclassname="active" className="nav-link">Segui tu pedido</NavLink></li>
-          <li className='nav-item'>🐱<NavLink to="/contacto" activeclassname="active" className="nav-link">Contacto</NavLink></li>
+          <li className='nav-item'>🐱<NavLink to="/buscar-pedido" activeclassname="active" className="nav-link" onClick={()=> setVisibleNav("")}>Segui tu pedido</NavLink></li>
+          <li className='nav-item'>🐱<NavLink to="/contacto" activeclassname="active" className="nav-link" onClick={()=> setVisibleNav("")}>Contacto</NavLink></li>
           <CartWidget/>
           <WishlistWidget />
         </ul>

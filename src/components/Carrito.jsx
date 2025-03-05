@@ -7,7 +7,7 @@ const Carrito = () => {
     const { carrito, calcularTotal, vaciarCarrito, eliminarProducto, sumarCantidad, restarCantidad } = useContext(CartContext);
 
     return (
-        <div>
+        <div className='content-wishlist-cart'>
             <div className='carrito-container'>
                 <h2>Carrito de Compras</h2>
                 {carrito.map(producto => (
@@ -30,9 +30,6 @@ const Carrito = () => {
                     <Link to ="/finalizar-compra" className='confirmar-compra'>Finalizar Compra</Link>
                 </button>
                 </div>
-                <div>
-                <img className='carrito-impresora' src="/image/impresora.jfif" alt="" />
-            </div> 
             </div>
            
         </div>

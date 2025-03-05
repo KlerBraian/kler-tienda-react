@@ -356,7 +356,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.img-wishlist {
+  width: 100px;
+  height: 100px;
+}
 
+.content-wishlist-cart {
+  display: flex;
+  flex-grow: 1;
+}
 
 
 
@@ -372,10 +380,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-inline: 600px;
   gap: 1rem;
   border-radius: 0.4rem;
   margin-bottom: 1rem;
+  padding: 1rem;
+  margin-inline: 300px;
+  flex-grow: 1;
 }
 
 .producto-carrito {
@@ -384,6 +394,8 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .confirmar-compra {
@@ -392,14 +404,14 @@ body {
 }
 
 .carrito-izquierda {
-  width: 210px;
-  text-align: center;
+  width: 100%;
+  text-align: start;
   border-bottom: 1px solid #000;
+  padding: 1rem;
 }
 
 .carrito-derecha {
   margin-right: 10px;
-  border-bottom: 1px solid #000;
 }
 
 .producto-carrito-nombre {
@@ -534,7 +546,6 @@ button:hover {
 /* SEGUIMIENTO*/
 .container-seguimiento {
   margin: auto;
-
 }
 
 .input-estado {
@@ -551,11 +562,16 @@ button:hover {
   font-weight: bold;
 }
 
+.message-seguimiento {
+  text-align: center;
+}
+
 /* FOOTER */
 
 
 .footer {
   display: flex;
+  flex-shrink: 0;
   padding: 3rem;
   justify-content: space-between;
   margin-bottom: 0;
@@ -620,6 +636,10 @@ button:hover {
   .titulo-categoria {
     font-size: 2.4rem;
   }
+
+  .carrito-container {
+    margin-inline: 3rem;
+  }
 }
 
 /* ----- TABLETAS ----- */
@@ -634,6 +654,8 @@ button:hover {
   .titulo-categoria {
     font-size: 2rem;
   }
+
+
 }
 
 /* ----- MÓVILES ----- */
@@ -749,6 +771,16 @@ button:hover {
   .titulo-categoria {
     font-size: 1.5rem
   }
+
+  .contact-form {
+    width: auto;
+    margin: 5rem auto;
+  }
+
+  .contacto-titulo {
+    font-size: 3rem;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -777,6 +809,19 @@ button:hover {
     right: auto;
     align-items: center;
   }
+
+  .contact-form {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contacto-titulo {
+    font-size: 2rem;
+  }
+
+  .container-seguimiento {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -792,4 +837,5 @@ button:hover {
   .productos-grilla {
     margin: 0;
   }
+
 }

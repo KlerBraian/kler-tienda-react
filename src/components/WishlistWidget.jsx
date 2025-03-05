@@ -7,7 +7,7 @@ const WishlistWidget = () => {
   const { calcularCantidadWish } = useContext(CartContext);
 
     return (
-    <Link className='wishwidget nav-item' to="/wishlist">Deseos🌟 { calcularCantidadWish ()}
+    <Link onClick={()=> setVisibleNav("")} className='wishwidget' to="/wishlist">Deseos🌟 { calcularCantidadWish ()}
     </Link>
       )
 }

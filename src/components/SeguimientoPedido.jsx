@@ -9,6 +9,7 @@ export const SeguimientoPedido = () => {
 
   const [inputValue, setInputValue] = useState('');
   const [documentoEncontrado, setDocumentoEncontrado] = useState();
+  const [isChecking, setIsChecking] = useState(false)
 
 
   const handleInputChange = (event) => {
@@ -17,6 +18,7 @@ export const SeguimientoPedido = () => {
 
   const verificarDocumento = async () => {
     try {
+      setIsChecking(true)
       const docRef = doc(db, "pedidos", inputValue); 
       const docSnap = await getDoc(docRef); 
       if (docSnap.exists()) {
@@ -52,7 +54,8 @@ export const SeguimientoPedido = () => {
           ))}
           <h3 className='carrito-total'>Total: ${calcularTotal()}</h3>
         </>
-      )  : <p>Identificador invalido</p>
+      )  : isChecking ? <p className='message-seguimiento'>Identificador invalido</p> :
+      <p></p>
      }
     </div>
   );
