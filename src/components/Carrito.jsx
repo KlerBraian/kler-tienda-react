@@ -14,6 +14,7 @@ const Carrito = () => {
                     <div key={producto.id} className="producto-carrito">
                         <div className='carrito-izquierda'>
                             <h3 className='producto-carrito-nombre'>{producto.nombre}</h3>
+                            <img className='img-wishlist' src={producto.imagen} />
                         <p className='producto-carrito-cantidad'>Cantidad: <button onClick={() => restarCantidad(producto)} className="cantidad-resta">- </button> {producto.cantidad} <button onClick={() => sumarCantidad(producto)}  className="cantidad-suma"> +</button></p>
                         <button className='producto-carrito-eliminar' onClick={() => { eliminarProducto(producto) }}>Eliminar 🗑</button>
                         </div>
