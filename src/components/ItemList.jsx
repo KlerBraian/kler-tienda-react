@@ -4,7 +4,7 @@ import { Item } from './Item'
 export const ItemList = ( {products} ) => {
 
     return (
-      <div key={products.id} className ="productos-grilla">
+      <div key={products.id} className ="products-grilla">
           {
             products.length > 0 ?
             products.map(product => {

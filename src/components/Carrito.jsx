@@ -8,27 +8,27 @@ const Carrito = () => {
 
     return (
         <div className='content-wishlist-cart'>
-            <div className='carrito-container'>
+            <div className='cart-container'>
                 <h2>Carrito de Compras</h2>
                 {cart.map(product => (
-                    <div key={product.id} className="producto-carrito">
-                        <div className='carrito-izquierda'>
-                            <h3 className='producto-carrito-nombre'>{product.nombre}</h3>
+                    <div key={product.id} className="product-cart">
+                        <div className='cart-left'>
+                            <h3 className='product-cart-name'>{product.nombre}</h3>
                             <img className='img-wishlist' src={product.imagen} />
-                        <p className='producto-carrito-cantidad'>Cantidad: <button onClick={() => subtractQuantity(product)} className="cantidad-resta">- </button> {product.quantity} <button onClick={() => sumQuantity(product)}  className="cantidad-suma"> +</button></p>
-                        <button className='producto-carrito-eliminar' onClick={() => { deleteProduct(product) }}>Eliminar 🗑</button>
+                        <p className='product-cart-quantity'>Cantidad: <button onClick={() => subtractQuantity(product)} className="cantidad-resta">- </button> {product.quantity} <button onClick={() => sumQuantity(product)}  className="cantidad-suma"> +</button></p>
+                        <button className='product-cart-delete' onClick={() => { deleteProduct(product) }}>Eliminar 🗑</button>
                         </div>
-                        <div className='carrito-derecha'>
-                        <p className='producto-carrito-precio'>Precio: ${product.precio}</p>
-                        <p className='producto-carrito-subtotal'>Subtotal: ${(product.precio * product.quantity).toFixed(2)}</p>
+                        <div className='cart-right'>
+                        <p className='product-cart-price'>Precio: ${product.precio}</p>
+                        <p className='product-cart-subtotal'>Subtotal: ${(product.precio * product.quantity).toFixed(2)}</p>
                         </div>                  
                     </div>
                 ))}
-                <h3 className='carrito-total'>Total: ${calculateTotal()}</h3>
-                <div className='container-opciones'>
-                <button className='carrito-vaciar' onClick={emptyCart}>Vaciar Carrito</button>
-                <button className='confirmar-compra' >
-                    <Link to ="/finalizar-compra" className='confirmar-compra'>Finalizar Compra</Link>
+                <h3 className='cart-total'>Total: ${calculateTotal()}</h3>
+                <div className='container-options'>
+                <button className='cart-empty' onClick={emptyCart}>Vaciar Carrito</button>
+                <button className='purchase' >
+                    <Link to ="/finalizar-compra" className='purchase'>Finalizar Compra</Link>
                 </button>
                 </div>
             </div>

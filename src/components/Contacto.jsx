@@ -22,8 +22,8 @@ const ContactForm = () => {
 
   return (
     <form className='contact-form' onSubmit={handleSubmit}>
-    <h2 className='contacto-titulo'>Contacto</h2>
-      <div className='espacios-div'>
+    <h2 className='contact-tittle'>Contacto</h2>
+      <div className='space-div'>
         <label htmlFor="nombre">Nombre:</label>
         <input
           type="text"
@@ -34,7 +34,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className='espacios-div'>
+      <div className='space-div'>
         <label htmlFor="email">Correo Electrónico:</label>
         <input
           type="email"
@@ -45,7 +45,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className='espacios-div'>
+      <div className='space-div'>
         <label htmlFor="mensaje">Mensaje:</label>
         <textarea
           id="mensaje"

@@ -7,14 +7,14 @@ export const ItemDetail = ( { product } ) => {
     const { addToCart, addToWishlist } = useContext(CartContext);
 
   return (
-    <div className='contenedor-individual'>
-    <div className="producto-detalle-individual">
-        <h1 className='producto-titulo-individual'>{product.nombre}</h1>
-        <img className='producto-img-individual' src={product.imagen} />
-        <p className='producto-descripcion-individual'>{product.descripcion}</p>
-        <p className='producto-precio-individual'>${product.precio}</p>
-        <button onClick={() => addToCart(product)} className='boton-agregar-individual'>Agregar al carrito</button>
-        <button onClick={() => addToWishlist(product)} className='boton-agregar-wish'>Agregar a Deseos</button>
+    <div className='container-individual'>
+    <div className="product-detail-individual">
+        <h1 className='product-tittle-individual'>{product.nombre}</h1>
+        <img className='product-img-individual' src={product.imagen} />
+        <p className='product-description-individual'>{product.descripcion}</p>
+        <p className='product-price-individual'>${product.precio}</p>
+        <button onClick={() => addToCart(product)} className='button-add-individual'>Agregar al carrito</button>
+        <button onClick={() => addToWishlist(product)} className='button-add-wish'>Agregar a Deseos</button>
     </div>
 </div>
   )

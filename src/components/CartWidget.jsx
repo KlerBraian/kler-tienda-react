@@ -9,8 +9,8 @@ export const CartWidget = () => {
 const { calculateQuantity } = useContext(CartContext);
 
   return (
-    <Link onClick={()=> setVisibleNav("")} className="carrito" to="/carrito">
-     <FaCat className = "carrito"/> <FaShoppingCart /> {calculateQuantity()}
+    <Link onClick={()=> setVisibleNav("")} className="cart" to="/carrito">
+     <FaCat className = "cart"/> <FaShoppingCart /> {calculateQuantity()}
     </Link>
   )
 }

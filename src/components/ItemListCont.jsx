@@ -44,7 +44,7 @@ const ItemListCont = () => {
 
   return (
     <div className="item-list-container">
-      <h1 className='titulo-categoria'>{tittle}</h1>
+      <h1 className='tittle-category'>{tittle}</h1>
       <ItemList key={products.id} products={products} />
     </div>
   )

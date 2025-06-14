@@ -55,9 +55,9 @@ else if (cart.length> 0) {
 }
 
 return (
-    <div className="compra-sin-productos">
+    <div className="empty-purchase">
     <p className="checkout-id">No posee productos en su carrito</p>
-    <button className='confirmar-comre volver'><Link to="/" className='confirmar-compra'> Volver a la tienda</Link></button>
+    <button className='purchase return'><Link to="/" className='purchase'> Volver a la tienda</Link></button>
     </div>
    
 )

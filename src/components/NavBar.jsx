@@ -27,9 +27,9 @@ const NavBar = () => {
         <h1><NavLink to="/" className="logo-link">KlerCat</NavLink></h1>
         <img className="logo" src="/image/huella.png" alt="" />
       </div>
-      <button className={`abrir-menu${visibleNav}`} onClick={()=> setVisibleNav("Visible")}><i class="bi bi-list"></i></button>
+      <button className={`open-menu${visibleNav}`} onClick={()=> setVisibleNav("Visible")}><i class="bi bi-list"></i></button>
       <nav className={`nav${visibleNav} `}>
-        <button className='cerrar-menu'onClick={()=> setVisibleNav("")}><i class="bi bi-x-circle"></i></button>
+        <button className='close-menu'onClick={()=> setVisibleNav("")}><i class="bi bi-x-circle"></i></button>
         <ul className='menu'>
           <li className='nav-item' >
             🐱<NavLink to="/" activeclassname="active" className="nav-link" onClick={()=> setVisibleNav("")}>Inicio</NavLink>

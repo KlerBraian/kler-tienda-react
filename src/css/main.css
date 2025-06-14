@@ -35,7 +35,7 @@ body {
   gap: 1rem
 }
 
-.productos-h1 {
+.products-h1 {
   color: #000
 }
 
@@ -55,8 +55,6 @@ body {
   gap: 1.5rem;
 }
 
-
-
 .menu {
   font-family: sans-serif;
   display: flex;
@@ -73,14 +71,14 @@ body {
 }
 
 .nav-link,
-.carrito .wishwidget {
+.cart .wishwidget {
   color: #fff;
   transition: color 0.3s ease-in-out;
 }
 
 
 .nav-link:hover,
-.carrito:hover,
+.cart:hover,
 .wishwidget:hover {
   color: #f5b048;
 }
@@ -91,7 +89,7 @@ body {
   color: #f5b048;
 }
 
-.titulo-categoria {
+.tittle-category {
   font-family: "Quattrocento Sans", sans-serif;
   text-align: center;
   font-size: 3rem;
@@ -112,24 +110,24 @@ body {
   margin-top: 0.2rem;
 }
 
-.abrir-menu {
+.open-menu {
   display: none;
 }
 
-.cerrar-menu {
+.close-menu {
   display: none;
 }
 
 
 /* GRILLA PRODUCTOS*/
 
-.productos {
+.products {
   display: grid;
   place-items: center;
   min-height: 50vh;
 }
 
-.producto {
+.product {
   height: 430px;
   width: 305px;
   border-radius: 10%;
@@ -144,7 +142,7 @@ body {
   padding: 1rem;
 }
 
-.producto::before {
+.product::before {
   content: "";
   position: absolute;
   height: 490px;
@@ -163,12 +161,12 @@ body {
   }
 }
 
-.producto:hover::before {
+.product:hover::before {
   animation: rotar 2s linear infinite;
 }
 
 
-.producto::after {
+.product::after {
   content: "";
   position: absolute;
   height: 420px;
@@ -193,7 +191,7 @@ body {
   z-index: 2;
 }
 
-.producto-img {
+.product-img {
   width: 200px;
   height: 150px;
   object-fit: contain;
@@ -201,7 +199,7 @@ body {
   z-index: 2;
 }
 
-.carrito {
+.cart {
   text-decoration: none;
   font-size: 1.5rem;
   color: #fff;
@@ -215,7 +213,7 @@ body {
   margin-top: 2.5rem;
 }
 
-.productos-grilla {
+.products-grilla {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   justify-items: center;
@@ -225,7 +223,7 @@ body {
   max-width: 1200px;
 }
 
-.producto-precio {
+.product-price {
   color: #64493f;
   font-family: "Quattrocento Sans", sans-serif;
   text-align: end;
@@ -235,7 +233,7 @@ body {
   z-index: 2;
 }
 
-.boton-agregar {
+.button-add {
   font-family: "Quattrocento Sans", sans-serif;
   border: 0;
   background-color: #003148;
@@ -248,7 +246,7 @@ body {
   z-index: 2;
 }
 
-.producto-info {
+.product-info {
   font-family: "Quattrocento Sans", sans-serif;
   padding: 0.30rem;
   text-transform: uppercase;
@@ -259,14 +257,14 @@ body {
   z-index: 2;
 }
 
-.producto-titulo {
+.product-tittle {
   color: #64493f;
   font-family: "Quattrocento Sans", sans-serif;
   text-align: center;
   z-index: 2;
 }
 
-.producto-descripcion {
+.product-description {
   color: #64493f;
   font-size: 0.85rem;
   font-family: "Open Sans", sans-serif;
@@ -276,18 +274,18 @@ body {
 }
 
 
-.producto-detalles {
+.product-details {
   flex: 1;
   background-color: #eed5bd;
   padding: 1rem;
 }
 
 
-.contenedor-individual {
+.container-individual {
   margin: auto;
 }
 
-.producto-detalle-individual {
+.product-detail-individual {
   margin-inline: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -301,7 +299,7 @@ body {
     "img img wish";
 }
 
-.producto-titulo-individual {
+.product-tittle-individual {
   font-size: 45px;
   font-family: "Quattrocento Sans", sans-serif;
   grid-area: titulo;
@@ -309,14 +307,14 @@ body {
   margin-bottom: 3rem;
 }
 
-.producto-img-individual {
+.product-img-individual {
   grid-area: img;
   width: 470px;
   margin: auto;
   border-radius: 1rem;
 }
 
-.boton-agregar-individual {
+.button-add-individual {
   grid-area: agregar;
   font-family: "Quattrocento Sans", sans-serif;
   background-color: #003148;
@@ -329,7 +327,7 @@ body {
   font-size: 19px;
 }
 
-.boton-agregar-wish {
+.button-add-wish {
   grid-area: wish;
   font-family: "Quattrocento Sans", sans-serif;
   background-color: #432163;
@@ -343,14 +341,14 @@ body {
   margin-top: 0.2rem;
 }
 
-.producto-precio-individual {
+.product-price-individual {
   font-family: "Quattrocento Sans", sans-serif;
   grid-area: precio;
   font-size: 38px;
   text-align: center;
 }
 
-.producto-descripcion-individual {
+.product-description-individual {
   grid-area: desc;
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
@@ -374,7 +372,7 @@ body {
 */
 
 
-.carrito-container {
+.cart-container {
   margin-top: 2rem;
   background-color: #fff;
   display: flex;
@@ -388,7 +386,7 @@ body {
   flex-grow: 1;
 }
 
-.producto-carrito {
+.product-cart {
   width: 100%;
   font-family: "Quattrocento Sans", sans-serif;
   text-align: center;
@@ -398,42 +396,39 @@ body {
   gap: 1rem;
 }
 
-.confirmar-compra {
-  color: #fff;
-  text-decoration: none;
-}
 
-.carrito-izquierda {
+
+.cart-left {
   width: 100%;
   text-align: start;
   border-bottom: 1px solid #000;
   padding: 1rem;
 }
 
-.carrito-derecha {
+.cart-right {
   margin-right: 10px;
 }
 
-.producto-carrito-nombre {
+.product-cart-name {
   margin-bottom: 6px;
 }
 
-.producto-carrito-cantidad {
+.product-cart-quantity {
   margin-bottom: 6px;
 }
 
-.producto-carrito-eliminar {
+.product-cart-delete{
   margin-bottom: 6px;
 }
 
-.carrito-total {
+.cart-total {
   width: 100%;
   display: block;
   text-align: end;
   margin-right: 10px;
 }
 
-.container-opciones {
+.container-options {
   gap: 1rem;
   width: 100%;
   display: flex;
@@ -442,14 +437,16 @@ body {
   margin-right: 10px;
 }
 
-.confirmar-compra {
+.purchase {
+  color: #fff;
+  text-decoration: none;
   margin-bottom: 10px;
 }
 
 /* FORMULARIO CONTACTO
 */
 
-.contacto-titulo {
+.contact-tittle {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -464,7 +461,7 @@ form {
   border-radius: 1rem;
 }
 
-.espacios-div {
+.space-div {
   margin-bottom: 10px;
 }
 
@@ -503,7 +500,7 @@ button:hover {
   margin: auto;
 }
 
-.checkout-titulo {
+.checkout-tittle {
   font-family: "Quattrocento Sans", sans-serif;
   text-align: center;
   margin-bottom: 1rem;
@@ -531,11 +528,11 @@ button:hover {
   text-shadow: 0 0 5px #02a8f5, 0 0 5px #02a8f5, 0 0 5px #02a8f5;
 }
 
-.compra-sin-productos {
+.empty-purchase {
   margin: auto;
 }
 
-.volver {
+.return {
   width: 100%;
   ;
   margin-bottom: 0;
@@ -544,25 +541,25 @@ button:hover {
 
 
 /* SEGUIMIENTO*/
-.container-seguimiento {
+.container-follow{
   margin: auto;
 }
 
-.input-estado {
+.input-status {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.boton-verificar {
+.button-verify {
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.estado {
+.status {
   font-weight: bold;
 }
 
-.message-seguimiento {
+.message-follow {
   text-align: center;
 }
 
@@ -591,13 +588,13 @@ button:hover {
 
 }
 
-.footer-redes {
+.footer-networks {
   color: #fff;
   margin-inline: 1rem;
   font-size: 1.3rem;
 }
 
-.footer-redes a {
+.footer-networks a {
   color: #fff;
 }
 
@@ -613,7 +610,7 @@ button:hover {
 
 @media (max-width: 1320px) {
 
-  .carrito,
+  .cart,
   .wishwidget,
   .nav-item {
     text-align: center;
@@ -629,15 +626,15 @@ button:hover {
 
   .menu,
   .wishwidget,
-  .carrito {
+  .cart {
     font-size: 1.3rem;
   }
 
-  .titulo-categoria {
+  .tittle-category {
     font-size: 2.4rem;
   }
 
-  .carrito-container {
+  .cart-container {
     margin-inline: 3rem;
   }
 }
@@ -647,11 +644,11 @@ button:hover {
 
   .menu,
   .wishwidget,
-  .carrito {
+  .cart {
     font-size: 1rem;
   }
 
-  .titulo-categoria {
+  .tittle-category {
     font-size: 2rem;
   }
 
@@ -676,15 +673,15 @@ button:hover {
     ;
   }
 
-  .abrir-menu {
+  .open-menu {
     display: block;
   }
 
-  .abrir-menuVisible {
+  .open-menuVisible {
     display: none;
   }
 
-  .cerrar-menu {
+  .close-menu {
     display: block;
   }
 
@@ -728,14 +725,14 @@ button:hover {
     align-items: end;
   }
 
-  .productos-grilla {
+  .products-grilla {
     width: auto;
     margin: 1rem;
     grid-template-columns: 1fr;
     gap: 1.5rem
   }
 
-  .producto {
+  .product {
     height: 430px;
     display: flex;
     align-items: center;
@@ -744,11 +741,11 @@ button:hover {
     padding: 1.5rem;
   }
 
-  .producto-img {
+  .product-img {
     width: 100%;
   }
 
-  .producto-detalle-individual {
+  .product-detail-individual {
     margin-inline: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -760,15 +757,15 @@ button:hover {
       "wish";
   }
 
-  .producto-img-individual {
+  .product-img-individual {
     width: 100%;
   }
 
-  .carrito-container {
+  .cart-container {
     margin-inline: 1rem;
   }
 
-  .titulo-categoria {
+  .tittle-category {
     font-size: 1.5rem
   }
 
@@ -777,7 +774,7 @@ button:hover {
     margin: 5rem auto;
   }
 
-  .contacto-titulo {
+  .contact-tittle {
     font-size: 3rem;
   }
 
@@ -815,11 +812,11 @@ button:hover {
     gap: 1rem;
   }
 
-  .contacto-titulo {
+  .contact-tittle {
     font-size: 2rem;
   }
 
-  .container-seguimiento {
+  .container-follow {
     padding: 1rem;
   }
 }
@@ -834,7 +831,7 @@ button:hover {
     gap: 1rem;
   }
 
-  .productos-grilla {
+  .products-grilla {
     margin: 0;
     margin-bottom: 1rem;
   }
