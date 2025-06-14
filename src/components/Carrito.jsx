@@ -3,6 +3,9 @@ import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 import 'toastify-js/src/toastify.css'
 
+
+//Este componente muestra el carrito del usuario con los productos que tiene seleccionados y las funciones del carrito traidas del context (eliminar, modificar cantidad, vaciar, comprar)
+
 const Carrito = () => {
     const { cart, calculateTotal, emptyCart, deleteProduct, sumQuantity, subtractQuantity } = useContext(CartContext);
 

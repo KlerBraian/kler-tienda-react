@@ -2,6 +2,9 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 
+//Este componente obtiene los detalles de cada item Producto de la base para renderizarlo en la pagina de inicio. Tambien contiene las funciones de agregar al carrito/wishlist
+//traido del context. 
+
 export const Item = ( {product} ) => {
 
   const {addToCart, addToWishlist} = useContext(CartContext);

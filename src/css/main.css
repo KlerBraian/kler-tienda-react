@@ -23,6 +23,9 @@ body {
   flex: 1;
 }
 
+                                                /* ESTILOS DEL HEADER Y NAVBAR*/
+
+
 .logo-link {
   color: #fff;
   font-family: "Kolker Brush", cursive;
@@ -119,7 +122,7 @@ body {
 }
 
 
-/* GRILLA PRODUCTOS*/
+                                                  /* GRILLA PRODUCTOS*/
 
 .products {
   display: grid;
@@ -177,8 +180,6 @@ body {
   ;
 
 }
-
-
 
 .img-container {
   display: flex;
@@ -273,13 +274,11 @@ body {
   z-index: 2;
 }
 
-
 .product-details {
   flex: 1;
   background-color: #eed5bd;
   padding: 1rem;
 }
-
 
 .container-individual {
   margin: auto;
@@ -368,8 +367,7 @@ body {
 
 
 
-/* CARRRITO
-*/
+                                                                    /*CARRRITO*/
 
 
 .cart-container {
@@ -395,8 +393,6 @@ body {
   align-items: center;
   gap: 1rem;
 }
-
-
 
 .cart-left {
   width: 100%;
@@ -443,8 +439,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* FORMULARIO CONTACTO
-*/
+                                                              /* FORMULARIO CONTACTO*/
 
 .contact-tittle {
   font-size: 4rem;
@@ -490,7 +485,6 @@ button:hover {
   background-color: #000 !important;
   transition: background-color 0.5s !important;
 }
-
 
 .form-checkout {
   gap: 1rem
@@ -540,7 +534,7 @@ button:hover {
 }
 
 
-/* SEGUIMIENTO*/
+                                                            /* SEGUIMIENTO DE PEDIDO*/
 .container-follow{
   margin: auto;
 }
@@ -563,8 +557,8 @@ button:hover {
   text-align: center;
 }
 
-/* FOOTER */
 
+                                                                    /* FOOTER */
 
 .footer {
   display: flex;
@@ -601,13 +595,10 @@ button:hover {
 
 
 
+                                                                          /*MEDIA QUERIES*/
 
-
-
-
-
-
-
+  
+/* ---- ESCRITORIO ---- */                                                                        
 @media (max-width: 1320px) {
 
   .cart,
@@ -639,9 +630,9 @@ button:hover {
   }
 }
 
-/* ----- TABLETAS ----- */
-@media (max-width: 950px) {
 
+/* ----- TABLETS ----- */
+@media (max-width: 950px) {
   .menu,
   .wishwidget,
   .cart {
@@ -651,13 +642,10 @@ button:hover {
   .tittle-category {
     font-size: 2rem;
   }
-
-
 }
 
 /* ----- MÓVILES ----- */
 @media (max-width: 770px) {
-
   .Visible {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
@@ -835,5 +823,4 @@ button:hover {
     margin: 0;
     margin-bottom: 1rem;
   }
-
 }

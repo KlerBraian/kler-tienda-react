@@ -4,6 +4,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 
+//Este componente muestra el numero de productos agregados al carrito en la pagina de inicio usando la funcion calculateQuantity traida del context
+
 export const CartWidget = () => {
 
 const { calculateQuantity } = useContext(CartContext);

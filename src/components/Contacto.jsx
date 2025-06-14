@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+
+//Este componente crea y renderiza el formulario de contacto. Por el momento no se conecta con la base de datos para crear la consulta del formulario.
+//Falta agregar funcionalidad de envio de formulario.
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     nombre: '',

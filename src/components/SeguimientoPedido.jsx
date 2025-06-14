@@ -3,6 +3,9 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { CartContext } from '../context/CartContext';
 
+//Componente de seguimiento de pedido que renderiza en principio inputs para colocar el codigo de verificacion, luego al confirmar la verificacion haciendo el llamado a la
+//base de datos el componente renderiza los detalles de esa orden de compra.
+
 export const SeguimientoPedido = () => {
 
   const {calculateTotal} = useContext(CartContext);

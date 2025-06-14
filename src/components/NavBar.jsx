@@ -6,6 +6,9 @@ import { db } from "../firebase/config";
 import { Link, NavLink } from 'react-router-dom';
 import WishlistWidget from "./WishlistWidget"
 
+//Componente de navegacion para conectar las rutas a los distintos links de la pagina. Tambien contiene el llamado a la funcionalidad de mostrar/ocultar el nav en renderizacion mobile
+//Los titulos de los links de categorias son llamados de la base de datos.
+
 const NavBar = () => {
 
   let [categories, setCategories] = useState([]);

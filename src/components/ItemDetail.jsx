@@ -2,6 +2,9 @@ import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext';
 import { FaCat } from "react-icons/fa";
 
+
+//Este componente muestra un renderizado individual de cada producto con sus detalles y opciones de agregar al carrito/wishlist.
+
 export const ItemDetail = ( { product } ) => {
 
     const { addToCart, addToWishlist } = useContext(CartContext);

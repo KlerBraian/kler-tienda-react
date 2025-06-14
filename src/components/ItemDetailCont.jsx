@@ -4,6 +4,9 @@ import { ItemDetail } from './ItemDetail';
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 
+//Este componente realiza el llamado de los productos de la base de datos para renderizar sus detalles de manera individual usando su id que viene en el parametro de la url
+//De esta manera obtenemos el producto y lo enviamos al componente itemDetail para luego renderizar sus detalles.
+
 const ItemDetailCont = () => {
 
     let { itemId } = useParams();

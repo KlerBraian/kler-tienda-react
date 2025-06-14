@@ -1,6 +1,10 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import 'toastify-js/src/toastify.css'
+
+//Componente wishlist muestra una lista de productos agregados a la wishlist con sus detalles dando opciones de agregar al carrito, eliminar,modificar,vaciar la wishlist.
+//Tiene las mismas funcionalidades del carrito traidas del context pero en este caso se usan para la wishlist.
+
 const Wishlist = () => {
     const { wish, calculateTotalWish, emptyWishlist, deleteWish, sumWish, subtractWish, wishlistAddCart} = useContext(CartContext);
 

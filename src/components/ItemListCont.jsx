@@ -4,6 +4,9 @@ import { useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebase/config";
 
+
+//Este componente realiza el llamado a la base de datos para obtener la lista de productos, los titulos de cada categoria y enviarlos a los demas componentes para renderizar
+
 const ItemListCont = () => {
 
   let {categoryId} = useParams()

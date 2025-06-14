@@ -6,6 +6,10 @@ import { db } from "../firebase/config";
 import { Link } from "react-router-dom";
 
 
+//Este componente muestra las opciones de confirmacion de compra del carrito, ya sea que se intente comprar un carrito vacio o con productos. En 
+//caso de realizar la compra con productos se pediran los datos al usuario para confirmar y se le brinda un codigo de seguimiento de pedido al confirmar.
+//La funcion crea una orden de compra con los datos de dicha compra que se almacena en la base de datos y se usa el id de esa orden como codigo de seguimiento del pedido.
+
 export const Checkout = () => {
 
     const { cart, calculateTotal, emptyCart } = useContext(CartContext);

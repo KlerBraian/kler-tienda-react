@@ -1,5 +1,7 @@
 import React from 'react'
 
+//Este componente renderiza las redes en el footer de la pagina
+
 export const Footer = () => {
   return (
     <div className='footer'>
