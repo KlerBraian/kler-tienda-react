@@ -8,22 +8,22 @@ const ItemListCont = () => {
 
   let {categoryId} = useParams()
 
-  let [productos, setProductos] = useState([]);
+  let [products, setProducts] = useState([]);
 
-  let [titulo, setTitulo] = useState("Productos");
+  let [tittle, setTittle] = useState("Productos");
   
 
   useEffect(() => {
 
-    const productosRef = collection(db, "productos");
-    const q = categoryId ? query(productosRef, where("categoria.id", "==", categoryId)) : productosRef;
+    const productsRef = collection(db, "productos");
+    const q = categoryId ? query(productsRef, where("categoria.id", "==", categoryId)) : productsRef;
 
-    const categoriasRef = collection(db, "categorias");
-    let catQuery = categoryId && query(categoriasRef, where("id", "==", categoryId));
+    const categoryRef = collection(db, "categorias");
+    let catQuery = categoryId && query(categoryRef, where("id", "==", categoryId));
 
     getDocs(q)
       .then((res) => {
-        setProductos(
+        setProducts(
           res.docs.map((doc) => {
             return {...doc.data(), id: doc.id}
           })
@@ -33,10 +33,10 @@ const ItemListCont = () => {
       if (catQuery) {
         getDocs(catQuery)
           .then((res) => {
-            setTitulo(res.docs[0].data().nombre);
+            setTittle(res.docs[0].data().nombre);
           })
       } else {
-        setTitulo("Productos");
+        setTittle("Productos");
       }
   }, [categoryId]);
   
@@ -44,8 +44,8 @@ const ItemListCont = () => {
 
   return (
     <div className="item-list-container">
-      <h1 className='titulo-categoria'>{titulo}</h1>
-      <ItemList key={productos.id} productos={productos} />
+      <h1 className='titulo-categoria'>{tittle}</h1>
+      <ItemList key={products.id} products={products} />
     </div>
   )
 }

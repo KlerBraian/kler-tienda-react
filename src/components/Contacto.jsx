@@ -8,17 +8,16 @@ const ContactForm = () => {
   });
 
   const handleChange = (e) => {
-    const { nombre, value } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [nombre]: value
+      [name]: value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form data submitted:', formData);
-    // Aquí puedes añadir la lógica para enviar los datos a tu servidor
   };
 
   return (
@@ -30,7 +29,7 @@ const ContactForm = () => {
           type="text"
           id="nombre"
           nombre="nombre"
-          value={formData.nombre}
+          value={formData.name}
           onChange={handleChange}
           required
         />
@@ -51,7 +50,7 @@ const ContactForm = () => {
         <textarea
           id="mensaje"
           nombre="mensaje"
-          value={formData.mensaje}
+          value={formData.message}
           onChange={handleChange}
           required
         />

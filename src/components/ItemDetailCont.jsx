@@ -7,7 +7,7 @@ import { db } from "../firebase/config";
 const ItemDetailCont = () => {
 
     let { itemId } = useParams();
-    let [producto, setProducto] = useState(undefined);
+    let [product, setProduct] = useState(undefined);
     let [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const ItemDetailCont = () => {
       getDoc(docRef)
         .then(res => {
           if (res.data()) {
-            setProducto( { ...res.data(), id: res.id } );
+            setProduct( { ...res.data(), id: res.id } );
           }
           setLoading(false);
         })
@@ -25,8 +25,8 @@ const ItemDetailCont = () => {
 
     if (loading) {
       return <div>Cargando...</div>
-    } else if (producto) {
-      return <ItemDetail producto={producto} />
+    } else if (product) {
+      return <ItemDetail product={product} />
     } else {
       return <div>Producto no encontrado</div>
     }

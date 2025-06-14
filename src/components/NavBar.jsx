@@ -12,8 +12,8 @@ const NavBar = () => {
   let [visibleNav, setVisibleNav] = useState("");
 
   useEffect(() => {
-    const categoriasRef = collection(db, "categorias");
-    getDocs(categoriasRef)
+    const categoryRef = collection(db, "categorias");
+    getDocs(categoryRef)
       .then((res) => {
         setCategories(res.docs.map((doc) => {
           return { ...doc.data() }

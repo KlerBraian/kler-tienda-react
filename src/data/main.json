@@ -2,168 +2,168 @@
 [
   {
     "id": 1,
-    "nombre": "Rascador Deluxe",
-    "precio": 29.99,
-    "imagen": "/src/img/rascador.png",
-    "descripcion": "Un rascador grande y resistente que proporcionará horas de entretenimiento a tu gato, ayudando a mantener sus uñas saludables.",
-    "categoria": {
+    "name": "Rascador Deluxe",
+    "price": 29.99,
+    "image": "/src/img/rascador.png",
+    "decription": "Un rascador grande y resistente que proporcionará horas de entretenimiento a tu gato, ayudando a mantener sus uñas saludables.",
+    "category": {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "name": "Accesorios"
     }
   },
   {
     "id": 2,
-    "nombre": "Cama Suave",
-    "precio": 19.99,
-    "imagen": "/src/img/cama-suave.png",
-    "descripcion": "Una cama acolchada y cómoda para gatos, ideal para proporcionar un lugar suave y cálido para descansar.",
-    "categoria": {
+    "name": "Cama Suave",
+    "price": 19.99,
+    "image": "/src/img/cama-suave.png",
+    "decription": "Una cama acolchada y cómoda para gatos, ideal para proporcionar un lugar suave y cálido para descansar.",
+    "category": {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "name": "Accesorios"
     }
   },
   {
     "id": 3,
-    "nombre": "Juguete Interactivo",
-    "precio": 14.99,
-    "imagen": "/src/img/juguete-interactivo.png",
-    "descripcion": "Un juguete con luces y sonido que mantendrá a tu gato entretenido y activo, estimulando sus instintos naturales de caza.",
-    "categoria": {
+    "name": "Juguete Interactivo",
+    "price": 14.99,
+    "image": "/src/img/juguete-interactivo.png",
+    "decription": "Un juguete con luces y sonido que mantendrá a tu gato entretenido y activo, estimulando sus instintos naturales de caza.",
+    "category": {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "name": "Accesorios"
     }
   },
   {
     "id": 5,
-    "nombre": "Comedero Automático",
-    "precio": 49.99,
-    "imagen": "/src/img/comedero-automatico.png",
-    "descripcion": "Un dispensador de comida programable que asegura que tu gato tenga comida fresca disponible incluso cuando no estás en casa.",
-    "categoria": {
+    "name": "Comedero Automático",
+    "price": 49.99,
+    "image": "/src/img/comedero-automatico.png",
+    "decription": "Un dispensador de comida programable que asegura que tu gato tenga comida fresca disponible incluso cuando no estás en casa.",
+    "category": {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "name": "Accesorios"
     }
   },
   {
     "id": 9,
-    "nombre": "Transportadora Ventilada",
-    "precio": 34.99,
-    "imagen": "/src/img/transportadora.png",
-    "descripcion": "Una transportadora con buena ventilación que proporciona comodidad y seguridad durante los viajes.",
-    "categoria": {
+    "name": "Transportadora Ventilada",
+    "price": 34.99,
+    "image": "/src/img/transportadora.png",
+    "decription": "Una transportadora con buena ventilación que proporciona comodidad y seguridad durante los viajes.",
+    "category": {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "name": "Accesorios"
     }
   },
 
   {
     "id": 7,
-    "nombre": "Arena Aglomerante",
-    "precio": 12.99,
-    "imagen": "/src/img/arena.png",
-    "descripcion": "Una arena que forma grumos, facilitando la limpieza del arenero y manteniendo el área higiénica.",
-    "categoria": {
+    "name": "Arena Aglomerante",
+    "price": 12.99,
+    "image": "/src/img/arena.png",
+    "decription": "Una arena que forma grumos, facilitando la limpieza del arenero y manteniendo el área higiénica.",
+    "category": {
       "id": "higiene",
-      "nombre": "Higiene"
+      "name": "Higiene"
     }
   },
   {
     "id": 8,
-    "nombre": "Cepillo Deshedding",
-    "precio": 15.99,
-    "imagen": "/src/img/rascador.png",
-    "descripcion": "Un cepillo diseñado para eliminar el pelo suelto y reducir la caída, manteniendo el pelaje de tu gato saludable.",
-    "categoria": {
+    "name": "Cepillo Deshedding",
+    "price": 15.99,
+    "image": "/src/img/rascador.png",
+    "decription": "Un cepillo diseñado para eliminar el pelo suelto y reducir la caída, manteniendo el pelaje de tu gato saludable.",
+    "category": {
       "id": "higiene",
-      "nombre": "Higiene"
+      "name": "Higiene"
     }
   },
   {
     "id": 11,
-    "nombre": "Collar Antipulgas",
-    "precio": 9.99,
-    "imagen": "/src/img/collar-antipulgas.png",
-    "descripcion": "Un collar para prevenir pulgas, manteniendo a tu gato libre de parásitos y cómodo.",
-    "categoria": {
+    "name": "Collar Antipulgas",
+    "price": 9.99,
+    "image": "/src/img/collar-antipulgas.png",
+    "decription": "Un collar para prevenir pulgas, manteniendo a tu gato libre de parásitos y cómodo.",
+    "category": {
       "id": "higiene",
-      "nombre": "Higiene"
+      "name": "Higiene"
     }
   },
   {
     "id": 21,
-    "nombre": "Champú para Gatos",
-    "precio": 13.99,
-    "imagen": "/src/img/champu.png",
-    "descripcion": "Un champú suave y eficaz que deja el pelaje de tu gato limpio y brillante, sin irritar su piel.",
-    "categoria": {
+    "name": "Champú para Gatos",
+    "price": 13.99,
+    "image": "/src/img/champu.png",
+    "decription": "Un champú suave y eficaz que deja el pelaje de tu gato limpio y brillante, sin irritar su piel.",
+    "category": {
       "id": "higiene",
-      "nombre": "Higiene"
+      "name": "Higiene"
     }
   },
   {
     "id": 22,
-    "nombre": "Limpiador de Oídos",
-    "precio": 7.99,
-    "imagen": "/src/img/limpia-oidos.png",
-    "descripcion": "Una solución para limpiar y desinfectar los oídos de tu gato, previniendo infecciones y molestias.",
-    "categoria": {
+    "name": "Limpiador de Oídos",
+    "price": 7.99,
+    "image": "/src/img/limpia-oidos.png",
+    "decription": "Una solución para limpiar y desinfectar los oídos de tu gato, previniendo infecciones y molestias.",
+    "category": {
       "id": "higiene",
-      "nombre": "Higiene"
+      "name": "Higiene"
     }
   },
   {
     "id": 13,
-    "nombre": "Comida Seca Premium",
-    "precio": 34.99,
-    "imagen": "/src/img/comida.png",
-    "descripcion": "Un alimento seco de alta calidad que proporciona los nutrientes esenciales para la salud de tu gato.",
-    "categoria": {
+    "name": "Comida Seca Premium",
+    "price": 34.99,
+    "image": "/src/img/comida.png",
+    "decription": "Un alimento seco de alta calidad que proporciona los nutrientes esenciales para la salud de tu gato.",
+    "category": {
       "id": "comida",
-      "nombre": "Comida"
+      "name": "Comida"
     }
   },
   {
     "id": 14,
-    "nombre": "Comida Húmeda Gourmet",
-    "precio": 21.99,
-    "imagen": "/src/img/plato-comida.jpg",
-    "descripcion": "Una comida húmeda de alta calidad que proporciona una dieta balanceada y nutritiva para tu gato.",
-    "categoria": {
+    "name": "Comida Húmeda Gourmet",
+    "price": 21.99,
+    "image": "/src/img/plato-comida.jpg",
+    "decription": "Una comida húmeda de alta calidad que proporciona una dieta balanceada y nutritiva para tu gato.",
+    "category": {
       "id": "comida",
-      "nombre": "Comida"
+      "name": "Comida"
     }
   },
   {
     "id": 27,
-    "nombre": "Snacks de Pollo",
-    "precio": 5.99,
-    "imagen": "/src/img/snak.jfif",
-    "descripcion": "Deliciosos snacks de pollo para gatos, perfectos como recompensa o para consentir a tu mascota.",
-    "categoria": {
+    "name": "Snacks de Pollo",
+    "price": 5.99,
+    "image": "/src/img/snak.jfif",
+    "decription": "Deliciosos snacks de pollo para gatos, perfectos como recompensa o para consentir a tu mascota.",
+    "category": {
       "id": "comida",
-      "nombre": "Comida"
+      "name": "Comida"
     }
   },
   {
     "id": 28,
-    "nombre": "Pasta de Malta",
-    "precio": 6.99,
-    "imagen": "/src/img/snak.jfif",
-    "descripcion": "Una pasta de malta que ayuda a prevenir y eliminar las bolas de pelo en el tracto digestivo de tu gato.",
-    "categoria": {
+    "name": "Pasta de Malta",
+    "price": 6.99,
+    "image": "/src/img/snak.jfif",
+    "decription": "Una pasta de malta que ayuda a prevenir y eliminar las bolas de pelo en el tracto digestivo de tu gato.",
+    "category": {
       "id": "comida",
-      "nombre": "Comida"
+      "name": "Comida"
     }
   },
   {
     "id": 29,
-    "nombre": "Comida Húmeda para Gatitos",
-    "precio": 19.99,
-    "imagen": "/src/img/comida.png",
-    "descripcion": "Una fórmula especial de comida húmeda para gatitos, rica en nutrientes esenciales para su crecimiento.",
-    "categoria": {
+    "name": "Comida Húmeda para Gatitos",
+    "price": 19.99,
+    "image": "/src/img/comida.png",
+    "decription": "Una fórmula especial de comida húmeda para gatitos, rica en nutrientes esenciales para su crecimiento.",
+    "category": {
       "id": "comida",
-      "nombre": "Comida"
+      "name": "Comida"
     }
   }
 ]

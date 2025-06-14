@@ -4,10 +4,10 @@ import { CartContext } from '../context/CartContext';
 
 const WishlistWidget = () => {
 
-  const { calcularCantidadWish } = useContext(CartContext);
+  const { calculateQuantityWish } = useContext(CartContext);
 
     return (
-    <Link onClick={()=> setVisibleNav("")} className='wishwidget' to="/wishlist">Deseos🌟 { calcularCantidadWish ()}
+    <Link onClick={()=> setVisibleNav("")} className='wishwidget' to="/wishlist">Deseos🌟 { calculateQuantityWish ()}
     </Link>
       )
 }

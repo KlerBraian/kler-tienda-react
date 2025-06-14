@@ -8,25 +8,25 @@ import { Link } from "react-router-dom";
 
 export const Checkout = () => {
 
-    const { carrito, calcularTotal, vaciarCarrito } = useContext(CartContext);
+    const { cart, calculateTotal, emptyCart } = useContext(CartContext);
     const { register, handleSubmit } = useForm();
     let [docId, setDocId] = useState("");
 
-    const comprar = (data) => {
-        const pedido = {
-            cliente: data,
-            productos: carrito,
-            total: calcularTotal(),
-            fecha: Timestamp.now(),
-            estado: "En camino"
+    const purchase = (data) => {
+        const order = {
+            client: data,
+            products: cart,
+            total: calculateTotal(),
+            date: Timestamp.now(),
+            status: "En camino"
         }
         
-        const pedidosRef = collection(db, "pedidos");
+        const orderRef = collection(db, "pedidos");
 
-        addDoc(pedidosRef, pedido)
+        addDoc(orderRef, order)
             .then((doc) => {
                 setDocId(doc.id);
-                vaciarCarrito();
+                emptyCart();
             })
     }
 
@@ -42,10 +42,10 @@ export const Checkout = () => {
             </>
         )
     }
-else if (carrito.length> 0) {
+else if (cart.length> 0) {
   return (
     <div>
-        <form className="form-checkout" onSubmit={handleSubmit(comprar)}>
+        <form className="form-checkout" onSubmit={handleSubmit(purchase)}>
             <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
             <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />
             <button type="submit">Comprar</button>

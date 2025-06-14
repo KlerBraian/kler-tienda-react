@@ -5,10 +5,10 @@ import { CartContext } from '../context/CartContext';
 
 export const SeguimientoPedido = () => {
 
-  const { carrito, calcularTotal} = useContext(CartContext);
+  const {calculateTotal} = useContext(CartContext);
 
   const [inputValue, setInputValue] = useState('');
-  const [documentoEncontrado, setDocumentoEncontrado] = useState();
+  const [foundDocument, setFoundDocument] = useState();
   const [isChecking, setIsChecking] = useState(false)
 
 
@@ -16,16 +16,16 @@ export const SeguimientoPedido = () => {
     setInputValue(event.target.value);  
   };
 
-  const verificarDocumento = async () => {
+  const verifyDocument = async () => {
     try {
       setIsChecking(true)
       const docRef = doc(db, "pedidos", inputValue); 
       const docSnap = await getDoc(docRef); 
       if (docSnap.exists()) {
-        setDocumentoEncontrado(docSnap.data());
+        setFoundDocument(docSnap.data());
       } 
     } catch (error) {
-      setDocumentoEncontrado(null)
+      setFoundDocument(null)
     }
   };
 
@@ -37,22 +37,22 @@ export const SeguimientoPedido = () => {
         value={inputValue}
         onChange={handleInputChange}
       />
-      <button className='boton-verificar' onClick={verificarDocumento}>Verifique estado de su compra</button>
+      <button className='boton-verificar' onClick={verifyDocument}>Verifique estado de su compra</button>
 
-      {documentoEncontrado ? (
+      {foundDocument ? (
         <>
-          <p>Su pedido {inputValue} está: <span className='estado'>{documentoEncontrado.estado}</span>🐱.</p>
-          {documentoEncontrado.productos.map(producto => (
-            <div key={producto.id} className="producto-carrito">
+          <p>Su pedido {inputValue} está: <span className='estado'>{foundDocument.status}</span>🐱.</p>
+          {foundDocument.products.map(product => (
+            <div key={product.id} className="producto-carrito">
               <div className='carrito-izquierda'>
-                <h3 className='producto-carrito-nombre'>{producto.nombre}</h3>
-                <p className='producto-carrito-cantidad'>Cantidad: {producto.cantidad}</p>
-                <p className='producto-carrito-precio'>Precio: ${producto.precio}</p>
-                <p className='producto-carrito-subtotal'>Subtotal: ${(producto.precio * producto.cantidad).toFixed(2)}</p>
+                <h3 className='producto-carrito-nombre'>{product.nombre}</h3>
+                <p className='producto-carrito-cantidad'>Cantidad: {product.quantity}</p>
+                <p className='producto-carrito-precio'>Precio: ${product.precio}</p>
+                <p className='producto-carrito-subtotal'>Subtotal: ${(product.precio * product.quantity).toFixed(2)}</p>
               </div>
             </div>
           ))}
-          <h3 className='carrito-total'>Total: ${calcularTotal()}</h3>
+          <h3 className='carrito-total'>Total: ${calculateTotal()}</h3>
         </>
       )  : isChecking ? <p className='message-seguimiento'>Identificador invalido</p> :
       <p></p>
