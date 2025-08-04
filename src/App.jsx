@@ -12,12 +12,14 @@ import { CargarProductos } from "./components/CargarProductos";
 import { Checkout } from "./components/Checkout";
 import { SeguimientoPedido } from "./components/SeguimientoPedido";
 import Wishlist from "./components/Wishlist"
+import ScrollManager from "./components/SrcollManager"
 
 function App() {
 
   return (
    <CartProvider>
     <BrowserRouter>
+     <ScrollManager/>
     <NavBar/>
     <Routes>
       <Route path="/"element={<ItemListCont/>}></Route>
